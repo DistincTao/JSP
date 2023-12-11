@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="KO">
+<head>
+<meta charset="UTF-8">
+<title>GET 방식으로 요청하기</title>
+<script type="text/javascript">
+	function callServlet () {
+		location.href = "./hGET?name=길동";
+	}
+</script>
+</head>
+<body>
+	<h1>HelloServlet_GET 파일을 GET 방식으로 호출</h1>
+	<div>
+		<a href="./hGET?name=둘리">anchor 태그로 서블릿 요청</a>
+	</div>
+
+	<div>
+		<form action ="./hGET" method = "GET">
+			<input type="text" name="name">
+			<button type="submit">form 태그로 GET방식 요청</button>
+		</form>
+	</div>
+	
+	<button onclick="callServlet();">location.href로 서블릿 요청</button>
+</body>
+</html>

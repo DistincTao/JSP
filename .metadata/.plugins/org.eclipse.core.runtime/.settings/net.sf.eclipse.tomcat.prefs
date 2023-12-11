@@ -1,0 +1,12 @@
+contextsDir=C\:\\tomcat\\apache-tomcat-8.5.96\\conf\\Catalina\\localhost
+eclipse.preferences.version=1
+managerPassword=tomcat
+managerUrl=http\://localhost\:8081/manager
+managerUser=tomcat
+projectsInCp=JSPBasic;
+projectsInSourcePath=JSPBasic;
+tomcatConfigFile=C\:\\tomcat\\apache-tomcat-8.5.96\\conf\\server.xml
+tomcatDebugMode=true
+tomcatDir=C\:\\tomcat\\apache-tomcat-8.5.96
+tomcatJRE=1702256335162
+tomcatVersion=tomcatV8
