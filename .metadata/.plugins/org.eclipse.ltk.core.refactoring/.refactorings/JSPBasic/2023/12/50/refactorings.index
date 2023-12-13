@@ -9,3 +9,8 @@
 1702368404831	Delete elements
 1702369280235	Delete element
 1702372904239	Delete element
+1702427665550	Rename resource 'validateEx_update.jsp'
+1702432673151	Delete element
+1702432695944	Rename resource 'confirmation.jsp'
+1702435802039	Delete element
+1702451894508	Move 'error.jsp' to 'commonError'
