@@ -26,11 +26,13 @@ public class SessionLoginServlet extends HttpServlet {
 		String userPw = request.getParameter("userPw");
 		//id = asdf | pw = 1234
 		if (userId.equals("asdf") && userPw.equals("1234")) {
-			HttpSession sess = request.getSession();
+			// 로그인 성공 시 session 객체에 로그인 정보 남김
+			HttpSession sess = request.getSession(); // sessin 객체를 생성하여 불러옴
 
 			System.out.println("세션 id : " + sess.getId());
 			
 			sess.setAttribute("loginMemberId", userId);
+			
 			response.sendRedirect("./mainTest.jsp?status=loginSuccess");
 		}
 		

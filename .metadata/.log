@@ -3203,3 +3203,255 @@ org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://dl
 
 !ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-14 17:25:18.862
 !MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+!SESSION 2023-12-15 09:36:14.171 -----------------------------------------------
+eclipse.buildId=4.29.0.20230907-1200
+java.version=21.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-12-15 09:37:07.941
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2023-12-15 09:37:08.284
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-12-15 09:37:13.012
+!MESSAGE Logback config file: D:\Lectures\JSP\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.2.0.20230625-0847.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-12-15 09:37:15.626
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-12-15 09:37:15.626
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-12-15 09:37:15.626
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm.terminal.connector.local.command.launch"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(pl.szpinda.plugin.tomcat.commands.tomcatStartStop,Tomcat start,stop,
+		,
+		Category(pl.szpinda.plugin.tomcat.commands.category.key,Tomcat keys,null,true),
+		WorkbenchHandlerServiceHandler("pl.szpinda.plugin.tomcat.commands.tomcatStartStop"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-12-15 09:37:24.815
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\goott5'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 10:01:32.533
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 10:11:08.514
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 10:11:09.705
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 10:14:10.317
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 10:14:11.379
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 10:19:36.903
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 10:19:38.236
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 10:53:02.505
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 10:53:03.317
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 10:56:37.375
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 10:56:38.612
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 10:57:11.822
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 10:59:11.883
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 11:04:35.433
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 11:05:05.991
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 11:07:57.755
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 11:09:43.373
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 12:04:35.409
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 12:05:30.845
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 12:05:31.943
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 12:06:09.839
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 12:06:11.119
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 12:13:06.584
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 12:13:07.637
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 12:20:30.552
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 12:20:31.609
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 12:21:52.068
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 12:21:53.124
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 12:24:29.131
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 12:24:30.270
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 12:25:56.229
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 12:45:32.826
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 12:45:34.633
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 13:06:15.763
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 13:06:16.879
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 13:07:39.916
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 13:07:40.814
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 13:08:46.961
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 13:09:13.543
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 13:09:53.815
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 13:09:54.660
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY net.sf.eclipse.tomcat 4 4 2023-12-15 13:10:50.746
+!MESSAGE Runtime classpath after adding projects: [D:\Lectures\JSP\JSPBasic\build\classes, C:\tomcat\apache-tomcat-8.5.96\lib\annotations-api.jar, C:\tomcat\apache-tomcat-8.5.96\lib\catalina-ant.jar, C:\tomcat\apache-tomcat-8.5.96\lib\catalina-ha.jar, C:\tomcat\apache-tomcat-8.5.96\lib\catalina-storeconfig.jar, C:\tomcat\apache-tomcat-8.5.96\lib\catalina-tribes.jar, C:\tomcat\apache-tomcat-8.5.96\lib\catalina.jar, C:\tomcat\apache-tomcat-8.5.96\lib\ecj-4.6.3.jar, C:\tomcat\apache-tomcat-8.5.96\lib\jasper.jar, C:\tomcat\apache-tomcat-8.5.96\lib\jaspic-api.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-api.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-coyote.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-dbcp.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-i18n-de.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-i18n-es.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-i18n-fr.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-i18n-ja.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-i18n-ko.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-i18n-ru.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-i18n-zh-CN.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-jdbc.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-jni.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-util-scan.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-util.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-websocket.jar, C:\tomcat\apache-tomcat-8.5.96\lib\websocket-api.jar, D:\Lectures\JSP\JSPBasic\src\main\webapp\WEB-INF\lib\taglibs-standard-compat-1.2.5.jar, D:\Lectures\JSP\JSPBasic\src\main\webapp\WEB-INF\lib\taglibs-standard-impl-1.2.5.jar, D:\Lectures\JSP\JSPBasic\src\main\webapp\WEB-INF\lib\taglibs-standard-jstlel-1.2.5.jar, D:\Lectures\JSP\JSPBasic\src\main\webapp\WEB-INF\lib\taglibs-standard-spec-1.2.5.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\activemq-broker-5.16.7.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\activemq-client-5.16.7.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\activemq-jdbc-store-5.16.7.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\activemq-kahadb-store-5.16.7.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\activemq-openwire-legacy-5.16.7.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\activemq-protobuf-1.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\activemq-ra-5.16.7.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\batchee-jbatch-1.0.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\bcpkix-jdk15to18-1.76.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\bcprov-jdk15to18-1.76.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\bcutil-jdk15to18-1.76.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\bval-jsr-2.0.5.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\catalina-ant.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\catalina-ha.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\catalina-ssi.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\catalina-storeconfig.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\catalina-tribes.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\catalina.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-beanutils-1.9.4.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-cli-1.5.0.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-codec-1.15.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-collections-3.2.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-dbcp2-2.9.0.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-digester-1.8.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-jcs-core-2.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-jcs-jcache-2.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-lang3-3.12.0.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-logging-1.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-pool2-2.11.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\cryptacular-1.2.4.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\cxf-rt-rs-mp-client-3.5.7.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\cxf-shade-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\ecj-4.20.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-config-impl-1.2.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-connector-3.1.5.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-health-1.0.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-health-common-1.0.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-javamail_1.6_mail-1.0.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-jcache_1.0_spec-1.0-alpha-1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-metrics-1.0.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-metrics-common-1.0.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-openapi-impl-1.0.12.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-opentracing-1.0.0.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-transaction-3.1.5.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\hawtbuf-1.11.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\howl-1.0.1-1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\hsqldb-2.7.2-jdk8.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\istack-commons-runtime-3.0.11.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jackson-annotations-2.15.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jackson-core-2.15.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jackson-databind-2.15.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jackson-dataformat-yaml-2.15.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jakarta.activation-1.2.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jakarta.xml.bind-api-2.3.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jasper.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jaspic-api.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jasypt-1.9.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\java-support-7.5.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\javaee-api-8.0-6-tomcat.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jaxb-runtime-2.3.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\joda-time-2.10.10.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\johnzon-core-1.2.21.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\johnzon-jaxrs-1.2.21.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\johnzon-jsonb-1.2.21.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\johnzon-jsonp-strict-1.2.21.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\johnzon-mapper-1.2.21.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jose4j-0.9.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\mbean-annotation-api-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\microprofile-config-api-1.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\microprofile-fault-tolerance-api-1.1.4.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\microprofile-health-api-1.0.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\microprofile-jwt-auth-api-1.1.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\microprofile-metrics-api-1.1.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\microprofile-openapi-api-1.1.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\microprofile-opentracing-api-1.1.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\microprofile-rest-client-api-1.3.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\mp-common-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\mp-jwt-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\myfaces-api-2.3.10.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\myfaces-impl-2.3.10.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\neethi-3.0.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-api-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-client-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-core-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-cxf-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-cxf-rs-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-cxf-transport-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-ejbd-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-hsql-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-http-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-javaagent.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-jee-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-jee-accessors-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-jpa-integration-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-loader-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-rest-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-server-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-webservices-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openjpa-3.2.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-core-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-profile-api-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-saml-api-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-saml-impl-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-security-api-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-security-impl-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-soap-api-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-xacml-api-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-xacml-impl-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-xacml-saml-api-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-xacml-saml-impl-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-xmlsec-api-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-xmlsec-impl-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opentracing-api-0.31.0.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openwebbeans-ee-2.0.27.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openwebbeans-ee-common-2.0.27.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openwebbeans-ejb-2.0.27.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openwebbeans-el22-2.0.27.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openwebbeans-impl-2.0.27.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openwebbeans-jsf-2.0.27.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openwebbeans-spi-2.0.27.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openwebbeans-web-2.0.27.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\org.osgi.annotation.versioning-1.0.0.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\quartz-openejb-shade-2.2.4.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\reactive-streams-1.0.4.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\saaj-impl-1.5.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\safeguard-impl-1.2.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\serp-1.15.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\servicemix-bcel-shade-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\slf4j-api-1.7.36.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\slf4j-jdk14-1.7.36.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\snakeyaml-2.0.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\stax-ex-1.8.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\stax2-api-4.2.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\swizzle-stream-1.6.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\sxc-jaxb-core-0.8.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\sxc-runtime-0.8.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\taglibs-shade-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-api.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-coyote.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-dbcp.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-i18n-cs.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-i18n-de.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-i18n-es.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-i18n-fr.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-i18n-ja.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-i18n-ko.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-i18n-pt-BR.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-i18n-ru.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-i18n-zh-CN.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-jdbc.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-jni.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-util-scan.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-util.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-websocket.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-catalina-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-common-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-config-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-jaxrs-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-jdbc-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-loader-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-mojarra-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-myfaces-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-plus-webapp-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-security-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-webservices-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\txw2-2.3.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\websocket-api.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\woodstox-core-6.4.0.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\wsdl4j-1.6.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\wss4j-bindings-2.4.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\wss4j-policy-2.4.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\wss4j-ws-security-common-2.4.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\wss4j-ws-security-dom-2.4.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\wss4j-ws-security-policy-stax-2.4.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\wss4j-ws-security-stax-2.4.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\xbean-asm9-shaded-4.23.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\xbean-bundleutils-4.23.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\xbean-finder-shaded-4.23.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\xbean-naming-4.23.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\xbean-reflect-4.23.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\xmlschema-core-2.2.5.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\xmlsec-2.3.4.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\yoko-osgi-1.4.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\yoko-rmi-impl-1.4.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\yoko-rmi-spec-1.4.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\yoko-spec-corba-1.4.jar]
+
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 13:10:56.461
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 13:12:43.240
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 13:12:44.139
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 13:14:26.467
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 13:20:02.058
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 18:06:24.875
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 18:06:25.894
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 18:08:13.759
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 18:08:14.848
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 18:08:48.205
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 18:08:49.230
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 18:09:33.007
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 18:09:33.829
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 18:11:39.992
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 18:11:40.975
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 18:12:32.423
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 18:13:59.437
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 18:14:00.482
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 18:15:00.837
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 18:15:01.897
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-15 18:16:36.162
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
