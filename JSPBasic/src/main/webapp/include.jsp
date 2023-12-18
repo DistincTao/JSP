@@ -12,6 +12,9 @@
 <body>
 <%@ include file="header.jsp" %>
 <h1>Hello JSP</h1>
+<%-- 	<%  --%>
+// 	int a = 5;
+<%-- 	%> --%>
 <%@ include file="footer.jsp" %>
 </body>
 </html>

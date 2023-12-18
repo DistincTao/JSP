@@ -3637,3 +3637,1652 @@ java.net.MalformedURLException: Unsupported "platform:" protocol variation "net.
 	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+!SESSION 2023-12-18 09:08:00.683 -----------------------------------------------
+eclipse.buildId=4.29.0.20230907-1200
+java.version=21.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-12-18 09:08:04.503
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2023-12-18 09:08:04.824
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-12-18 09:31:30.966
+!MESSAGE Logback config file: D:\Lectures\JSP\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.2.0.20230625-0847.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-12-18 09:31:34.693
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-12-18 09:31:34.693
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-12-18 09:31:34.693
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm.terminal.connector.local.command.launch"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(pl.szpinda.plugin.tomcat.commands.tomcatStartStop,Tomcat start,stop,
+		,
+		Category(pl.szpinda.plugin.tomcat.commands.category.key,Tomcat keys,null,true),
+		WorkbenchHandlerServiceHandler("pl.szpinda.plugin.tomcat.commands.tomcatStartStop"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-12-18 09:31:44.505
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\goott5'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 09:36:59.041
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY net.sf.eclipse.tomcat 4 4 2023-12-18 09:50:00.630
+!MESSAGE Runtime classpath after adding projects: [D:\Lectures\JSP\JSPBasic\build\classes, C:\tomcat\apache-tomcat-8.5.96\lib\annotations-api.jar, C:\tomcat\apache-tomcat-8.5.96\lib\catalina-ant.jar, C:\tomcat\apache-tomcat-8.5.96\lib\catalina-ha.jar, C:\tomcat\apache-tomcat-8.5.96\lib\catalina-storeconfig.jar, C:\tomcat\apache-tomcat-8.5.96\lib\catalina-tribes.jar, C:\tomcat\apache-tomcat-8.5.96\lib\catalina.jar, C:\tomcat\apache-tomcat-8.5.96\lib\ecj-4.6.3.jar, C:\tomcat\apache-tomcat-8.5.96\lib\jasper.jar, C:\tomcat\apache-tomcat-8.5.96\lib\jaspic-api.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-api.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-coyote.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-dbcp.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-i18n-de.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-i18n-es.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-i18n-fr.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-i18n-ja.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-i18n-ko.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-i18n-ru.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-i18n-zh-CN.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-jdbc.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-jni.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-util-scan.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-util.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-websocket.jar, C:\tomcat\apache-tomcat-8.5.96\lib\websocket-api.jar, D:\Lectures\JSP\JSPBasic\src\main\webapp\WEB-INF\lib\taglibs-standard-compat-1.2.5.jar, D:\Lectures\JSP\JSPBasic\src\main\webapp\WEB-INF\lib\taglibs-standard-impl-1.2.5.jar, D:\Lectures\JSP\JSPBasic\src\main\webapp\WEB-INF\lib\taglibs-standard-jstlel-1.2.5.jar, D:\Lectures\JSP\JSPBasic\src\main\webapp\WEB-INF\lib\taglibs-standard-spec-1.2.5.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\activemq-broker-5.16.7.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\activemq-client-5.16.7.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\activemq-jdbc-store-5.16.7.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\activemq-kahadb-store-5.16.7.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\activemq-openwire-legacy-5.16.7.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\activemq-protobuf-1.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\activemq-ra-5.16.7.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\batchee-jbatch-1.0.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\bcpkix-jdk15to18-1.76.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\bcprov-jdk15to18-1.76.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\bcutil-jdk15to18-1.76.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\bval-jsr-2.0.5.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\catalina-ant.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\catalina-ha.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\catalina-ssi.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\catalina-storeconfig.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\catalina-tribes.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\catalina.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-beanutils-1.9.4.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-cli-1.5.0.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-codec-1.15.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-collections-3.2.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-dbcp2-2.9.0.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-digester-1.8.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-jcs-core-2.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-jcs-jcache-2.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-lang3-3.12.0.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-logging-1.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-pool2-2.11.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\cryptacular-1.2.4.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\cxf-rt-rs-mp-client-3.5.7.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\cxf-shade-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\ecj-4.20.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-config-impl-1.2.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-connector-3.1.5.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-health-1.0.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-health-common-1.0.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-javamail_1.6_mail-1.0.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-jcache_1.0_spec-1.0-alpha-1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-metrics-1.0.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-metrics-common-1.0.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-openapi-impl-1.0.12.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-opentracing-1.0.0.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-transaction-3.1.5.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\hawtbuf-1.11.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\howl-1.0.1-1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\hsqldb-2.7.2-jdk8.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\istack-commons-runtime-3.0.11.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jackson-annotations-2.15.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jackson-core-2.15.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jackson-databind-2.15.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jackson-dataformat-yaml-2.15.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jakarta.activation-1.2.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jakarta.xml.bind-api-2.3.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jasper.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jaspic-api.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jasypt-1.9.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\java-support-7.5.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\javaee-api-8.0-6-tomcat.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jaxb-runtime-2.3.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\joda-time-2.10.10.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\johnzon-core-1.2.21.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\johnzon-jaxrs-1.2.21.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\johnzon-jsonb-1.2.21.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\johnzon-jsonp-strict-1.2.21.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\johnzon-mapper-1.2.21.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jose4j-0.9.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\mbean-annotation-api-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\microprofile-config-api-1.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\microprofile-fault-tolerance-api-1.1.4.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\microprofile-health-api-1.0.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\microprofile-jwt-auth-api-1.1.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\microprofile-metrics-api-1.1.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\microprofile-openapi-api-1.1.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\microprofile-opentracing-api-1.1.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\microprofile-rest-client-api-1.3.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\mp-common-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\mp-jwt-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\myfaces-api-2.3.10.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\myfaces-impl-2.3.10.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\neethi-3.0.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-api-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-client-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-core-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-cxf-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-cxf-rs-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-cxf-transport-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-ejbd-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-hsql-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-http-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-javaagent.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-jee-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-jee-accessors-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-jpa-integration-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-loader-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-rest-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-server-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-webservices-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openjpa-3.2.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-core-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-profile-api-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-saml-api-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-saml-impl-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-security-api-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-security-impl-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-soap-api-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-xacml-api-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-xacml-impl-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-xacml-saml-api-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-xacml-saml-impl-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-xmlsec-api-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-xmlsec-impl-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opentracing-api-0.31.0.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openwebbeans-ee-2.0.27.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openwebbeans-ee-common-2.0.27.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openwebbeans-ejb-2.0.27.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openwebbeans-el22-2.0.27.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openwebbeans-impl-2.0.27.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openwebbeans-jsf-2.0.27.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openwebbeans-spi-2.0.27.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openwebbeans-web-2.0.27.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\org.osgi.annotation.versioning-1.0.0.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\quartz-openejb-shade-2.2.4.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\reactive-streams-1.0.4.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\saaj-impl-1.5.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\safeguard-impl-1.2.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\serp-1.15.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\servicemix-bcel-shade-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\slf4j-api-1.7.36.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\slf4j-jdk14-1.7.36.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\snakeyaml-2.0.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\stax-ex-1.8.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\stax2-api-4.2.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\swizzle-stream-1.6.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\sxc-jaxb-core-0.8.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\sxc-runtime-0.8.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\taglibs-shade-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-api.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-coyote.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-dbcp.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-i18n-cs.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-i18n-de.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-i18n-es.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-i18n-fr.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-i18n-ja.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-i18n-ko.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-i18n-pt-BR.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-i18n-ru.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-i18n-zh-CN.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-jdbc.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-jni.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-util-scan.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-util.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-websocket.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-catalina-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-common-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-config-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-jaxrs-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-jdbc-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-loader-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-mojarra-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-myfaces-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-plus-webapp-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-security-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-webservices-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\txw2-2.3.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\websocket-api.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\woodstox-core-6.4.0.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\wsdl4j-1.6.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\wss4j-bindings-2.4.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\wss4j-policy-2.4.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\wss4j-ws-security-common-2.4.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\wss4j-ws-security-dom-2.4.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\wss4j-ws-security-policy-stax-2.4.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\wss4j-ws-security-stax-2.4.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\xbean-asm9-shaded-4.23.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\xbean-bundleutils-4.23.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\xbean-finder-shaded-4.23.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\xbean-naming-4.23.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\xbean-reflect-4.23.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\xmlschema-core-2.2.5.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\xmlsec-2.3.4.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\yoko-osgi-1.4.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\yoko-rmi-impl-1.4.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\yoko-rmi-spec-1.4.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\yoko-spec-corba-1.4.jar]
+
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 09:50:12.935
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 09:50:15.002
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 09:50:26.798
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 09:50:28.759
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 09:54:06.018
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 09:59:19.595
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 09:59:51.771
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 09:59:52.811
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 10:00:22.983
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 10:00:24.057
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 10:22:24.962
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 10:22:26.110
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 10:22:43.512
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 10:22:44.511
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 10:25:23.129
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 10:26:46.648
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 10:38:34.751
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 10:47:12.330
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 10:49:37.877
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 10:49:39.031
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 11:03:24.291
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 11:03:25.515
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 11:07:44.506
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 11:07:45.669
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 11:10:04.358
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 11:10:05.380
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 11:11:07.123
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 11:11:08.153
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY net.sf.eclipse.tomcat 4 4 2023-12-18 11:13:16.687
+!MESSAGE Runtime classpath after adding projects: [D:\Lectures\JSP\JSPBasic\build\classes, C:\tomcat\apache-tomcat-8.5.96\lib\annotations-api.jar, C:\tomcat\apache-tomcat-8.5.96\lib\catalina-ant.jar, C:\tomcat\apache-tomcat-8.5.96\lib\catalina-ha.jar, C:\tomcat\apache-tomcat-8.5.96\lib\catalina-storeconfig.jar, C:\tomcat\apache-tomcat-8.5.96\lib\catalina-tribes.jar, C:\tomcat\apache-tomcat-8.5.96\lib\catalina.jar, C:\tomcat\apache-tomcat-8.5.96\lib\ecj-4.6.3.jar, C:\tomcat\apache-tomcat-8.5.96\lib\jasper.jar, C:\tomcat\apache-tomcat-8.5.96\lib\jaspic-api.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-api.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-coyote.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-dbcp.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-i18n-de.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-i18n-es.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-i18n-fr.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-i18n-ja.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-i18n-ko.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-i18n-ru.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-i18n-zh-CN.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-jdbc.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-jni.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-util-scan.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-util.jar, C:\tomcat\apache-tomcat-8.5.96\lib\tomcat-websocket.jar, C:\tomcat\apache-tomcat-8.5.96\lib\websocket-api.jar, D:\Lectures\JSP\JSPBasic\src\main\webapp\WEB-INF\lib\taglibs-standard-compat-1.2.5.jar, D:\Lectures\JSP\JSPBasic\src\main\webapp\WEB-INF\lib\taglibs-standard-impl-1.2.5.jar, D:\Lectures\JSP\JSPBasic\src\main\webapp\WEB-INF\lib\taglibs-standard-jstlel-1.2.5.jar, D:\Lectures\JSP\JSPBasic\src\main\webapp\WEB-INF\lib\taglibs-standard-spec-1.2.5.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\activemq-broker-5.16.7.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\activemq-client-5.16.7.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\activemq-jdbc-store-5.16.7.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\activemq-kahadb-store-5.16.7.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\activemq-openwire-legacy-5.16.7.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\activemq-protobuf-1.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\activemq-ra-5.16.7.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\batchee-jbatch-1.0.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\bcpkix-jdk15to18-1.76.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\bcprov-jdk15to18-1.76.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\bcutil-jdk15to18-1.76.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\bval-jsr-2.0.5.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\catalina-ant.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\catalina-ha.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\catalina-ssi.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\catalina-storeconfig.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\catalina-tribes.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\catalina.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-beanutils-1.9.4.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-cli-1.5.0.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-codec-1.15.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-collections-3.2.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-dbcp2-2.9.0.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-digester-1.8.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-jcs-core-2.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-jcs-jcache-2.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-lang3-3.12.0.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-logging-1.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\commons-pool2-2.11.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\cryptacular-1.2.4.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\cxf-rt-rs-mp-client-3.5.7.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\cxf-shade-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\ecj-4.20.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-config-impl-1.2.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-connector-3.1.5.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-health-1.0.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-health-common-1.0.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-javamail_1.6_mail-1.0.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-jcache_1.0_spec-1.0-alpha-1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-metrics-1.0.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-metrics-common-1.0.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-openapi-impl-1.0.12.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-opentracing-1.0.0.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\geronimo-transaction-3.1.5.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\hawtbuf-1.11.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\howl-1.0.1-1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\hsqldb-2.7.2-jdk8.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\istack-commons-runtime-3.0.11.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jackson-annotations-2.15.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jackson-core-2.15.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jackson-databind-2.15.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jackson-dataformat-yaml-2.15.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jakarta.activation-1.2.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jakarta.xml.bind-api-2.3.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jasper.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jaspic-api.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jasypt-1.9.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\java-support-7.5.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\javaee-api-8.0-6-tomcat.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jaxb-runtime-2.3.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\joda-time-2.10.10.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\johnzon-core-1.2.21.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\johnzon-jaxrs-1.2.21.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\johnzon-jsonb-1.2.21.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\johnzon-jsonp-strict-1.2.21.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\johnzon-mapper-1.2.21.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\jose4j-0.9.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\mbean-annotation-api-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\microprofile-config-api-1.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\microprofile-fault-tolerance-api-1.1.4.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\microprofile-health-api-1.0.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\microprofile-jwt-auth-api-1.1.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\microprofile-metrics-api-1.1.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\microprofile-openapi-api-1.1.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\microprofile-opentracing-api-1.1.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\microprofile-rest-client-api-1.3.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\mp-common-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\mp-jwt-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\myfaces-api-2.3.10.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\myfaces-impl-2.3.10.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\neethi-3.0.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-api-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-client-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-core-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-cxf-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-cxf-rs-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-cxf-transport-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-ejbd-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-hsql-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-http-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-javaagent.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-jee-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-jee-accessors-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-jpa-integration-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-loader-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-rest-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-server-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openejb-webservices-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openjpa-3.2.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-core-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-profile-api-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-saml-api-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-saml-impl-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-security-api-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-security-impl-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-soap-api-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-xacml-api-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-xacml-impl-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-xacml-saml-api-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-xacml-saml-impl-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-xmlsec-api-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opensaml-xmlsec-impl-3.4.6.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\opentracing-api-0.31.0.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openwebbeans-ee-2.0.27.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openwebbeans-ee-common-2.0.27.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openwebbeans-ejb-2.0.27.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openwebbeans-el22-2.0.27.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openwebbeans-impl-2.0.27.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openwebbeans-jsf-2.0.27.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openwebbeans-spi-2.0.27.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\openwebbeans-web-2.0.27.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\org.osgi.annotation.versioning-1.0.0.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\quartz-openejb-shade-2.2.4.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\reactive-streams-1.0.4.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\saaj-impl-1.5.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\safeguard-impl-1.2.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\serp-1.15.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\servicemix-bcel-shade-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\slf4j-api-1.7.36.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\slf4j-jdk14-1.7.36.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\snakeyaml-2.0.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\stax-ex-1.8.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\stax2-api-4.2.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\swizzle-stream-1.6.2.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\sxc-jaxb-core-0.8.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\sxc-runtime-0.8.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\taglibs-shade-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-api.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-coyote.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-dbcp.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-i18n-cs.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-i18n-de.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-i18n-es.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-i18n-fr.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-i18n-ja.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-i18n-ko.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-i18n-pt-BR.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-i18n-ru.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-i18n-zh-CN.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-jdbc.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-jni.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-util-scan.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-util.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomcat-websocket.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-catalina-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-common-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-config-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-jaxrs-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-jdbc-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-loader-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-mojarra-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-myfaces-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-plus-webapp-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-security-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\tomee-webservices-8.0.16.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\txw2-2.3.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\websocket-api.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\woodstox-core-6.4.0.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\wsdl4j-1.6.3.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\wss4j-bindings-2.4.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\wss4j-policy-2.4.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\wss4j-ws-security-common-2.4.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\wss4j-ws-security-dom-2.4.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\wss4j-ws-security-policy-stax-2.4.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\wss4j-ws-security-stax-2.4.1.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\xbean-asm9-shaded-4.23.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\xbean-bundleutils-4.23.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\xbean-finder-shaded-4.23.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\xbean-naming-4.23.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\xbean-reflect-4.23.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\xmlschema-core-2.2.5.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\xmlsec-2.3.4.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\yoko-osgi-1.4.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\yoko-rmi-impl-1.4.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\yoko-rmi-spec-1.4.jar, C:\tomcat\apache-tomee-plus-8.0.16\lib\yoko-spec-corba-1.4.jar]
+
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 11:13:20.739
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 11:51:09.730
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 11:51:10.725
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 11:53:11.735
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 11:53:12.717
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 12:14:36.741
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 12:14:38.178
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 12:18:25.937
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 12:18:26.947
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 12:18:54.259
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 12:18:55.179
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 13:00:53.408
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 13:00:54.564
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 13:06:52.874
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 13:06:53.826
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 13:18:36.059
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 13:18:37.355
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 13:20:23.152
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 13:20:24.179
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 13:20:50.138
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 13:20:51.170
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 13:21:19.568
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 13:21:20.572
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 13:21:44.731
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 13:21:45.724
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 14:38:15.222
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 14:38:16.265
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 14:39:11.971
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 14:39:13.153
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 14:48:02.056
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 14:48:02.966
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 14:49:30.266
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 14:49:31.307
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 14:59:31.723
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 14:59:32.704
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 15:00:10.010
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 15:00:10.968
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 15:01:24.701
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 15:01:25.736
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 15:05:24.216
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 15:05:25.271
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 15:06:42.014
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 15:06:42.991
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 15:07:07.859
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 15:07:08.824
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 15:08:08.987
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 15:08:10.091
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 15:19:25.107
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 15:19:26.824
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 15:42:40.324
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 15:42:41.393
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 15:43:40.485
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 15:43:41.475
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 15:55:33.641
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 15:55:34.699
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 15:57:06.448
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 15:57:07.615
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-12-18 17:45:15.861
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-12-18 17:45:15.864
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-12-18 17:45:15.866
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-12-18 17:45:15.867
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-12-18 17:45:15.877
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-12-18 17:45:15.884
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 4 0 2023-12-18 17:45:16.010
+!MESSAGE Error while getting URI 'platform:net.sf.eclipse.tomcat/net/sf/eclipse/tomcat/schemas/' from plugin 'net.sf.eclipse.tomcat' : Unsupported "platform:" protocol variation "net.sf.eclipse.tomcat".
+!STACK 0
+java.net.MalformedURLException: Unsupported "platform:" protocol variation "net.sf.eclipse.tomcat".
+	at org.eclipse.core.internal.boot.PlatformURLHandler.openConnection(PlatformURLHandler.java:61)
+	at org.eclipse.osgi.internal.url.URLStreamHandlerProxy.openConnection(URLStreamHandlerProxy.java:137)
+	at java.base/java.net.URL.openConnection(URL.java:1258)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.resolve(PlatformURLConverter.java:46)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:288)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.resolveURI(XMLCatalogs.java:157)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.lambda$3(XMLCatalogs.java:72)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.getWTPExtensionCatalog(XMLCatalogs.java:68)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.getAllCatalogs(XMLCatalogs.java:53)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLPreferenceServerConstants.storePreferencesToLemminxOptions(XMLPreferenceServerConstants.java:193)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.mergeCustomInitializationOptions(XMLLanguageServer.java:205)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.getInitializationOptions(XMLLanguageServer.java:183)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$0(LanguageServerWrapper.java:266)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2023-12-18 17:53:35.939
+!MESSAGE Several ports (8085, 8081) required by Tomcat v8.5 Server at localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-12-18 19:19:42.107
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:668)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:300)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:230)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:56)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:92)
+	at org.eclipse.jface.resource.LazyResourceManager.create(LazyResourceManager.java:96)
+	at org.eclipse.jface.resource.LocalResourceManager.allocate(LocalResourceManager.java:71)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:92)
+	at org.eclipse.ui.internal.views.helpers.EmptyWorkspaceHelper.createOption(EmptyWorkspaceHelper.java:277)
+	at org.eclipse.ui.internal.views.helpers.EmptyWorkspaceHelper.createEmptyArea(EmptyWorkspaceHelper.java:206)
+	at org.eclipse.ui.internal.views.helpers.EmptyWorkspaceHelper.getComposite(EmptyWorkspaceHelper.java:118)
+	at org.eclipse.ui.navigator.resources.ProjectExplorer.createPartControl(ProjectExplorer.java:160)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:158)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.createPartControl(CompatibilityView.java:155)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:365)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:971)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:936)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:142)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:386)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:313)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:528)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1364)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:118)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:677)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:150)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:51)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:82)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:118)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:64)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:677)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:150)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1083)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-12-18 19:19:42.112
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:668)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:300)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:290)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:268)
+	at org.eclipse.jst.jee.ui.internal.navigator.web.WebAppProvider.getWeb31Image(WebAppProvider.java:167)
+	at org.eclipse.jst.jee.ui.internal.navigator.web.WebAppProvider.getImage(WebAppProvider.java:111)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25LabelProvider.getImage(Web25LabelProvider.java:47)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceLabelProvider.findImage(NavigatorContentServiceLabelProvider.java:204)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceLabelProvider.getColumnImage(NavigatorContentServiceLabelProvider.java:112)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceLabelProvider.getImage(NavigatorContentServiceLabelProvider.java:104)
+	at org.eclipse.ui.internal.navigator.NavigatorDecoratingLabelProvider$StyledLabelProviderAdapter.getImage(NavigatorDecoratingLabelProvider.java:63)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.getImage(DelegatingStyledCellLabelProvider.java:198)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.getImage(DecoratingStyledCellLabelProvider.java:171)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.update(DelegatingStyledCellLabelProvider.java:124)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.update(DecoratingStyledCellLabelProvider.java:134)
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:146)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:988)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$UpdateItemSafeRunnable.run(AbstractTreeViewer.java:129)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:1066)
+	at org.eclipse.jface.viewers.StructuredViewer$UpdateItemSafeRunnable.run(StructuredViewer.java:428)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.updateItem(StructuredViewer.java:2122)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createTreeItem(AbstractTreeViewer.java:876)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createAddedElements(AbstractTreeViewer.java:445)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalAdd(AbstractTreeViewer.java:301)
+	at org.eclipse.jface.viewers.TreeViewer.internalAdd(TreeViewer.java:634)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.add(AbstractTreeViewer.java:170)
+	at org.eclipse.ui.navigator.CommonViewer.add(CommonViewer.java:305)
+	at org.eclipse.jst.j2ee.navigator.internal.ClearPlaceHolderJob.runInUIThread(ClearPlaceHolderJob.java:42)
+	at org.eclipse.jst.jee.ui.internal.navigator.ClearJeePlaceHolderJob.runInUIThread(ClearJeePlaceHolderJob.java:32)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:148)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-12-18 19:19:42.116
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:668)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:300)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:230)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:56)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:92)
+	at org.eclipse.jface.resource.LazyResourceManager.create(LazyResourceManager.java:96)
+	at org.eclipse.jface.resource.LocalResourceManager.allocate(LocalResourceManager.java:71)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:92)
+	at org.eclipse.jface.resource.ResourceManager.createImageWithDefault(ResourceManager.java:192)
+	at org.eclipse.jface.action.ActionContributionItem.updateImages(ActionContributionItem.java:1046)
+	at org.eclipse.jface.action.ActionContributionItem.updateMenuItem(ActionContributionItem.java:917)
+	at org.eclipse.jface.action.ActionContributionItem.update(ActionContributionItem.java:742)
+	at org.eclipse.jface.action.ActionContributionItem.fill(ActionContributionItem.java:292)
+	at org.eclipse.ui.actions.CompoundContributionItem.fill(CompoundContributionItem.java:64)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:729)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:806)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:470)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:495)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:259)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1071)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5141)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4773)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2306)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4845)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2306)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4845)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2306)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-12-18 19:19:42.117
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:668)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:300)
+	at org.eclipse.jface.resource.DeferredImageDescriptor.createImage(DeferredImageDescriptor.java:85)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:230)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:56)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:92)
+	at org.eclipse.jface.resource.LazyResourceManager.create(LazyResourceManager.java:89)
+	at org.eclipse.jface.resource.LocalResourceManager.allocate(LocalResourceManager.java:71)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:92)
+	at org.eclipse.ui.actions.OpenWithMenu.getImage(OpenWithMenu.java:137)
+	at org.eclipse.ui.actions.OpenWithMenu.createMenuItem(OpenWithMenu.java:174)
+	at org.eclipse.ui.actions.OpenWithMenu.fill(OpenWithMenu.java:271)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:729)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:806)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:673)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1227)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContents(MenuManagerRenderer.java:655)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeTopicChildAdded(MenuManagerRenderer.java:325)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4803)
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:294)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:304)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.reconcileManagerToModel(MenuManagerRenderer.java:1076)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.reconcileManagerToModel(MenuManagerRenderer.java:1014)
+	at org.eclipse.ui.internal.PopupMenuExtender.addMenuContributions(PopupMenuExtender.java:379)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:355)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:338)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:468)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:495)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:259)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1071)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5141)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4773)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2306)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:237)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4113)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-12-18 19:19:42.119
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:668)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:300)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:230)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:56)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:92)
+	at org.eclipse.jface.resource.LazyResourceManager.create(LazyResourceManager.java:96)
+	at org.eclipse.jface.resource.LocalResourceManager.allocate(LocalResourceManager.java:71)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:92)
+	at org.eclipse.ui.internal.views.helpers.EmptyWorkspaceHelper.createOption(EmptyWorkspaceHelper.java:277)
+	at org.eclipse.ui.internal.views.helpers.EmptyWorkspaceHelper.createEmptyArea(EmptyWorkspaceHelper.java:206)
+	at org.eclipse.ui.internal.views.helpers.EmptyWorkspaceHelper.getComposite(EmptyWorkspaceHelper.java:118)
+	at org.eclipse.ui.navigator.resources.ProjectExplorer.createPartControl(ProjectExplorer.java:160)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:158)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.createPartControl(CompatibilityView.java:155)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:365)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:971)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:936)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:142)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:386)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:313)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:528)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1364)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:118)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:677)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:150)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:51)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:82)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:118)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:64)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:677)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:150)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1083)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-12-18 19:19:42.120
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:668)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:300)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:230)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:56)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:92)
+	at org.eclipse.jface.resource.LazyResourceManager.create(LazyResourceManager.java:96)
+	at org.eclipse.jface.resource.LocalResourceManager.allocate(LocalResourceManager.java:71)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:92)
+	at org.eclipse.ui.internal.views.helpers.EmptyWorkspaceHelper.createOption(EmptyWorkspaceHelper.java:277)
+	at org.eclipse.ui.internal.views.helpers.EmptyWorkspaceHelper.createEmptyArea(EmptyWorkspaceHelper.java:206)
+	at org.eclipse.ui.internal.views.helpers.EmptyWorkspaceHelper.getComposite(EmptyWorkspaceHelper.java:118)
+	at org.eclipse.ui.navigator.resources.ProjectExplorer.createPartControl(ProjectExplorer.java:160)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:158)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.createPartControl(CompatibilityView.java:155)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:365)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:971)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:936)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:142)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:386)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:313)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:528)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1364)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:118)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:677)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:150)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:51)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:82)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:118)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:64)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:677)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:150)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1083)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-12-18 19:19:42.121
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:668)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:300)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:230)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:56)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:92)
+	at org.eclipse.jface.resource.LazyResourceManager.create(LazyResourceManager.java:96)
+	at org.eclipse.jface.resource.LocalResourceManager.allocate(LocalResourceManager.java:71)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:92)
+	at org.eclipse.ui.internal.views.helpers.EmptyWorkspaceHelper.createOption(EmptyWorkspaceHelper.java:277)
+	at org.eclipse.ui.internal.views.helpers.EmptyWorkspaceHelper.createEmptyArea(EmptyWorkspaceHelper.java:206)
+	at org.eclipse.ui.internal.views.helpers.EmptyWorkspaceHelper.getComposite(EmptyWorkspaceHelper.java:118)
+	at org.eclipse.ui.navigator.resources.ProjectExplorer.createPartControl(ProjectExplorer.java:160)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:158)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.createPartControl(CompatibilityView.java:155)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:365)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:971)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:936)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:142)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:386)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:313)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:528)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1364)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:118)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:677)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:150)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:51)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:82)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:118)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:64)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:677)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:150)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1083)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-12-18 19:19:42.124
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:668)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:300)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:290)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:268)
+	at org.eclipse.wst.xml.ui.internal.ImageDescriptorRegistry.getImage(ImageDescriptorRegistry.java:36)
+	at org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart.createPages(XMLMultiPageEditorPart.java:795)
+	at org.eclipse.ui.part.MultiPageEditorPart.createPartControl(MultiPageEditorPart.java:333)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:158)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPartControl(CompatibilityEditor.java:96)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:365)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:971)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:936)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:142)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:386)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:313)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.lambda$0(PartServiceImpl.java:105)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4803)
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElementGen(ElementContainerImpl.java:170)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:188)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:661)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:625)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:796)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.bringToTop(PartServiceImpl.java:401)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1270)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3233)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$11(WorkbenchPage.java:3123)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3121)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3091)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3082)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:548)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:508)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:367)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:172)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:288)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:254)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:252)
+	at org.eclipse.jdt.internal.ui.navigator.OpenAndExpand.run(OpenAndExpand.java:53)
+	at org.eclipse.ui.actions.RetargetAction.run(RetargetAction.java:215)
+	at org.eclipse.ui.navigator.CommonNavigatorManager$1.open(CommonNavigatorManager.java:183)
+	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:801)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:798)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1121)
+	at org.eclipse.ui.navigator.CommonViewer.handleOpen(CommonViewer.java:452)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:296)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:331)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-12-18 19:19:42.126
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:668)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:300)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:290)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:268)
+	at org.eclipse.wst.xml.ui.internal.ImageDescriptorRegistry.getImage(ImageDescriptorRegistry.java:36)
+	at org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart.createPages(XMLMultiPageEditorPart.java:794)
+	at org.eclipse.ui.part.MultiPageEditorPart.createPartControl(MultiPageEditorPart.java:333)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:158)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPartControl(CompatibilityEditor.java:96)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:365)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:971)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:936)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:142)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:386)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:313)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.lambda$0(PartServiceImpl.java:105)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4803)
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElementGen(ElementContainerImpl.java:170)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:188)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:661)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:625)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:796)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.bringToTop(PartServiceImpl.java:401)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1270)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3233)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$11(WorkbenchPage.java:3123)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3121)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3091)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3082)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:548)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:508)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:367)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:172)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:288)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:254)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:252)
+	at org.eclipse.jdt.internal.ui.navigator.OpenAndExpand.run(OpenAndExpand.java:53)
+	at org.eclipse.ui.actions.RetargetAction.run(RetargetAction.java:215)
+	at org.eclipse.ui.navigator.CommonNavigatorManager$1.open(CommonNavigatorManager.java:183)
+	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:801)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:798)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1121)
+	at org.eclipse.ui.navigator.CommonViewer.handleOpen(CommonViewer.java:452)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:296)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:331)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+!SESSION 2023-12-18 19:19:43.244 -----------------------------------------------
+eclipse.buildId=4.29.0.20230907-1200
+java.version=21.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-12-18 19:20:18.370
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2023-12-18 19:20:18.644
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-12-18 19:20:21.836
+!MESSAGE Logback config file: D:\Lectures\JSP\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.2.0.20230625-0847.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-12-18 19:20:23.803
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-12-18 19:20:23.803
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-12-18 19:20:23.803
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm.terminal.connector.local.command.launch"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(pl.szpinda.plugin.tomcat.commands.tomcatStartStop,Tomcat start,stop,
+		,
+		Category(pl.szpinda.plugin.tomcat.commands.category.key,Tomcat keys,null,true),
+		WorkbenchHandlerServiceHandler("pl.szpinda.plugin.tomcat.commands.tomcatStartStop"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-12-18 19:20:31.101
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\goott5'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 1 0 2023-12-18 19:22:19.637
+!MESSAGE Skipping argument '-Djava.endorsed.dirs=C:\tomcat\apache-tomee-plus-8.0.16\endorsed' while launching Apache Tomcat EE v9.0 at localhost
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-12-18 21:10:31.255
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:668)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:300)
+	at org.eclipse.jface.resource.DeferredImageDescriptor.createImage(DeferredImageDescriptor.java:85)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:230)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:56)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:92)
+	at org.eclipse.jface.resource.LazyResourceManager.create(LazyResourceManager.java:89)
+	at org.eclipse.jface.resource.LocalResourceManager.allocate(LocalResourceManager.java:71)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:92)
+	at org.eclipse.ui.actions.OpenWithMenu.getImage(OpenWithMenu.java:137)
+	at org.eclipse.ui.actions.OpenWithMenu.createMenuItem(OpenWithMenu.java:174)
+	at org.eclipse.ui.actions.OpenWithMenu.fill(OpenWithMenu.java:271)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:729)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:806)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:673)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1227)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContents(MenuManagerRenderer.java:655)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeTopicChildAdded(MenuManagerRenderer.java:325)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4803)
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:294)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:304)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.reconcileManagerToModel(MenuManagerRenderer.java:1076)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.reconcileManagerToModel(MenuManagerRenderer.java:1014)
+	at org.eclipse.ui.internal.PopupMenuExtender.addMenuContributions(PopupMenuExtender.java:379)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:355)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:338)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:468)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:495)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:259)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1071)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5141)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4773)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2306)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:237)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4113)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-12-18 21:10:31.261
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:668)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:300)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:230)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:56)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:92)
+	at org.eclipse.jface.resource.LazyResourceManager.create(LazyResourceManager.java:96)
+	at org.eclipse.jface.resource.LocalResourceManager.allocate(LocalResourceManager.java:71)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:92)
+	at org.eclipse.jface.resource.ResourceManager.createImageWithDefault(ResourceManager.java:192)
+	at org.eclipse.jface.action.ActionContributionItem.updateImages(ActionContributionItem.java:1018)
+	at org.eclipse.jface.action.ActionContributionItem.updateToolItem(ActionContributionItem.java:776)
+	at org.eclipse.jface.action.ActionContributionItem.update(ActionContributionItem.java:739)
+	at org.eclipse.jface.action.ActionContributionItem.fill(ActionContributionItem.java:350)
+	at org.eclipse.jface.action.ToolBarManager.update(ToolBarManager.java:358)
+	at org.eclipse.jdt.internal.ui.typehierarchy.TypeHierarchyViewPart.createPartControl(TypeHierarchyViewPart.java:976)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:158)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.createPartControl(CompatibilityView.java:155)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:365)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:971)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:936)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:142)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:386)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:313)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:528)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.subscribeTopicToBeRendered(PartRenderingEngine.java:161)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler.handleEvent(EventObjectSupplier.java:92)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setToBeRendered(UIElementImpl.java:314)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:656)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:625)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:796)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:764)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:686)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:681)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1261)
+	at org.eclipse.ui.internal.WorkbenchPage.showPart(WorkbenchPage.java:1248)
+	at org.eclipse.ui.internal.WorkbenchPage.busyShowView(WorkbenchPage.java:1236)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$13(WorkbenchPage.java:4252)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.WorkbenchPage.showView(WorkbenchPage.java:4250)
+	at org.eclipse.ui.internal.WorkbenchPage.showView(WorkbenchPage.java:4234)
+	at org.eclipse.jdt.internal.ui.util.OpenTypeHierarchyUtil.openInViewPart(OpenTypeHierarchyUtil.java:86)
+	at org.eclipse.jdt.internal.ui.util.OpenTypeHierarchyUtil.open(OpenTypeHierarchyUtil.java:64)
+	at org.eclipse.jdt.ui.actions.OpenTypeHierarchyAction.run(OpenTypeHierarchyAction.java:263)
+	at org.eclipse.jdt.ui.actions.OpenTypeHierarchyAction.run(OpenTypeHierarchyAction.java:248)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:252)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-12-18 21:10:31.263
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:668)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:300)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:230)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:56)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:92)
+	at org.eclipse.jface.resource.LazyResourceManager.create(LazyResourceManager.java:96)
+	at org.eclipse.jface.resource.LocalResourceManager.allocate(LocalResourceManager.java:71)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:92)
+	at org.eclipse.jface.resource.ResourceManager.createImageWithDefault(ResourceManager.java:192)
+	at org.eclipse.jface.action.ActionContributionItem.updateImages(ActionContributionItem.java:1016)
+	at org.eclipse.jface.action.ActionContributionItem.updateToolItem(ActionContributionItem.java:776)
+	at org.eclipse.jface.action.ActionContributionItem.update(ActionContributionItem.java:739)
+	at org.eclipse.jface.action.ActionContributionItem.fill(ActionContributionItem.java:350)
+	at org.eclipse.jface.action.ToolBarManager.update(ToolBarManager.java:358)
+	at org.eclipse.jdt.internal.ui.typehierarchy.TypeHierarchyViewPart.createPartControl(TypeHierarchyViewPart.java:976)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:158)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.createPartControl(CompatibilityView.java:155)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:365)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:971)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:936)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:142)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:386)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:313)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:528)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.subscribeTopicToBeRendered(PartRenderingEngine.java:161)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler.handleEvent(EventObjectSupplier.java:92)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setToBeRendered(UIElementImpl.java:314)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:656)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:625)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:796)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:764)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:686)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:681)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1261)
+	at org.eclipse.ui.internal.WorkbenchPage.showPart(WorkbenchPage.java:1248)
+	at org.eclipse.ui.internal.WorkbenchPage.busyShowView(WorkbenchPage.java:1236)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$13(WorkbenchPage.java:4252)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.WorkbenchPage.showView(WorkbenchPage.java:4250)
+	at org.eclipse.ui.internal.WorkbenchPage.showView(WorkbenchPage.java:4234)
+	at org.eclipse.jdt.internal.ui.util.OpenTypeHierarchyUtil.openInViewPart(OpenTypeHierarchyUtil.java:86)
+	at org.eclipse.jdt.internal.ui.util.OpenTypeHierarchyUtil.open(OpenTypeHierarchyUtil.java:64)
+	at org.eclipse.jdt.ui.actions.OpenTypeHierarchyAction.run(OpenTypeHierarchyAction.java:263)
+	at org.eclipse.jdt.ui.actions.OpenTypeHierarchyAction.run(OpenTypeHierarchyAction.java:248)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:252)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
