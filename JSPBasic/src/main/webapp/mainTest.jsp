@@ -18,28 +18,29 @@ function getParameter(parameter) {
 	if (url.indexOf("?") != -1) {
 		let queryString = url.split("?")[1];
 		let queryArr = queryString.split("&");
-		
+
 		for (let item of queryArr) {
 			if (item.split("=")[0] == parameter){
 				reval = item.split("=")[1];
 				break;
 			}
 		}
-	 }
+	}
 	return reval;
 }
-onload = function (){
 
+onload = function (){
 	let status = getParameter("status")
+
 	if (status == 'loginSuccess') {
 		alert("login 성공")
 	} else if (status == 'logoutSuccess') {
 		alert("logout 성공")
 	}
-
 }
+
 </script>
-<% 
+<%
 // 자바로 자바스크립트에 alert 창 띄우기
 if (request.getQueryString() != null && request.getParameter("status").equals("loginSuccess")){
 	String query = request.getParameter("status");
@@ -57,25 +58,23 @@ if (request.getQueryString() != null && request.getParameter("status").equals("l
 	int inactiveTime = session.getMaxInactiveInterval();
 	boolean isNewSession = session.isNew();
 	String strNewSession = "";
-	
+
 	if (isNewSession) {
 		strNewSession = "새로운 세션이 만들어 졌습니다.";
 	} else {
 		strNewSession = "기존 세션입니다. 새로 만들어지지 않았습니다.";
 	}
-	
+
 	//getArrtibuteNames() 메소드 호춣하여 session에 바인딩 된 정보를 출력
 	Enumeration <String> sessionInfo = session.getAttributeNames();
 
-
-	while (sessionInfo.hasMoreElements()) {	
+	while (sessionInfo.hasMoreElements()) {
 		String sName = sessionInfo.nextElement();
 		String sValue = (String) session.getAttribute(sName);
-		
+
 		out.print("속성이름 : " + sName + ", 속성값 : " + sValue + "<br>");
 	}
 %>
-
 
 </head>
 <body>
@@ -88,27 +87,26 @@ if (request.getQueryString() != null && request.getParameter("status").equals("l
 	<div>세션 유효 시간 : <%= inactiveTime / 60 %>s </div>
 	<div>새로운 세션 : <%= strNewSession %> </div>
 
-
 	<h1>mainTest.jsp</h1>
-	<c:choose>
-		<c:when test="${sessionScope.loginMemberId == null}">
+
 		<div>
 			<a href="./loginTest1.jsp">로그인 1</a>
 		</div>
 		<br>
+
 		<div>
 			<a href="./loginTest2.jsp">로그인 2 (w/ session)</a>
 		</div>
-		
-		<div><a href="./hello.jsp">hello.jsp로 이동</a></div>
+
+		<div>
+			<a href="./hello.jsp">hello.jsp로 이동</a>
+		</div>
 		<br>
-		</c:when>
-		<c:otherwise>
 		<form action="./sessionLogout.do" method="get">
 			<input type="submit" value="로그아웃">
 		</form>
-		</c:otherwise>
-	</c:choose>
-	<div><a href="./checkSession.jsp">이동</a></div>
+	<div>
+		<a href="./checkSession.jsp">이동</a>
+	</div>
 </body>
 </html>
