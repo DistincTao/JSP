@@ -35,14 +35,14 @@ public class EmpDaoImpl implements EmpDao {
 
 			while (rs.next()) {
 				list.add(new EmpVo(rs.getInt ("EMPNO"),
-						rs.getString ("ENAME"),
-						rs.getString ("JOB"),
-						rs.getInt ("MGR"),
-						rs.getDate ("HIREDATE"),
-						rs.getDouble ("SAL"),
-						rs.getDouble ("COMM"), 
-						rs.getInt ("DEPTNO"),
-						rs.getString ("DNAME")));
+			   					   rs.getString ("ENAME"),
+								   rs.getString ("JOB"),
+								   rs.getInt ("MGR"),
+								   rs.getDate ("HIREDATE"),
+								   rs.getDouble ("SAL"),
+								   rs.getDouble ("COMM"), 
+								   rs.getInt ("DEPTNO"),
+								   rs.getString ("DNAME")));
 			}
 		}
 		return list;

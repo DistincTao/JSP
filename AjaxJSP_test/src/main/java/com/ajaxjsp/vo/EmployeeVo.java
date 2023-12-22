@@ -38,6 +38,7 @@ public class EmployeeVo {
 		this.commition_pct = commition_pct;
 		this.manager_id = manager_id;
 		this.department_id = department_id;
+		this.department_name = department_name;
 	}
 
 	public void setEmployee_id(int employee_id) {

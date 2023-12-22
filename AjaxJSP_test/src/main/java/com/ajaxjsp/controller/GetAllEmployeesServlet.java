@@ -19,6 +19,7 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 import com.ajaxjsp.dao.EmployeesDaoImpl;
+import com.ajaxjsp.etc.OutputJsonForError;
 import com.ajaxjsp.vo.EmployeeVo;
 
 
@@ -32,29 +33,28 @@ public class GetAllEmployeesServlet extends HttpServlet {
 
     }
 
-
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("GetAllEmployeesServlet 서블릿 테스트");
 		response.setContentType("application/json; charset=utf-8");
 		EmployeesDaoImpl dao = EmployeesDaoImpl.getInstance();
-
+		PrintWriter out = response.getWriter();
+		
 		try {
 			List<EmployeeVo> list = dao.selectAllEmployees();
 			// 출력 테스트 (dao 단에서 반환되어 왔는지)
 			String outputJson = toJsonWithJsonSimple(list);
 //			System.out.println(outputJson);
 			
-			PrintWriter out = response.getWriter();
+
 			out.print(outputJson);
 			out.close();
 			
-			for (EmployeeVo vo : list) {
-				System.out.println(vo.toString());
-			}
+//			for (EmployeeVo vo : list) {
+//				System.out.println(vo.toString());
+//			}
 
-			
 		} catch (SQLException | NamingException e) {
-			// TODO Auto-generated catch block
+			out.print(OutputJsonForError.outputJson(e));
 			e.printStackTrace();
 		}
 	}
