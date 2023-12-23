@@ -5,7 +5,7 @@ import java.sql.Date;
 public class EmployeeVo {
 	
 	private int employee_id;
-	private String fisrt_name;
+	private String first_name;
 	private String last_name;
 	private String email;
 	private String phone_number;
@@ -23,12 +23,12 @@ public class EmployeeVo {
 		super();
 	}
 
-	public EmployeeVo(int employee_id, String fisrt_name, String last_name, String email, String phone_number,
+	public EmployeeVo(int employee_id, String first_name, String last_name, String email, String phone_number,
 			Date hire_date, String job_id, double salary, double commition_pct, int manager_id,
 			int department_id, String department_name) {
 		super();
 		this.employee_id = employee_id;
-		this.fisrt_name = fisrt_name;
+		this.first_name = first_name;
 		this.last_name = last_name;
 		this.email = email;
 		this.phone_number = phone_number;
@@ -45,8 +45,8 @@ public class EmployeeVo {
 		this.employee_id = employee_id;
 	}
 
-	public void setFisrt_name(String fisrt_name) {
-		this.fisrt_name = fisrt_name;
+	public void setFirst_name(String first_name) {
+		this.first_name = first_name;
 	}
 
 	public void setLast_name(String last_name) {
@@ -93,8 +93,8 @@ public class EmployeeVo {
 		return employee_id;
 	}
 
-	public String getFisrt_name() {
-		return fisrt_name;
+	public String getFirst_name() {
+		return first_name;
 	}
 
 	public String getLast_name() {
@@ -139,7 +139,7 @@ public class EmployeeVo {
 
 	@Override
 	public String toString() {
-		return "EmployeeVo [employee_id=" + employee_id + ", fisrt_name=" + fisrt_name + ", last_name=" + last_name
+		return "EmployeeVo [employee_id=" + employee_id + ", first_name=" + first_name + ", last_name=" + last_name
 				+ ", email=" + email + ", phone_number=" + phone_number + ", hire_date=" + hire_date + ", job_id="
 				+ job_id + ", salary=" + salary + ", commition_pct=" + commition_pct + ", manager_id=" + manager_id
 				+ ", department_id=" + department_id + "]";
