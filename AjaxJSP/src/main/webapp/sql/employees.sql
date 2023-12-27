@@ -19,4 +19,6 @@ SELECT distinct m.EMPLOYEE_ID as manager_id, m.FIRST_NAME, m.last_NAME, d.depart
    FROM EMPLOYEES;
    
 DELETE from EMPLOYEES
- where employee_id = ?
+ where employee_id = ?;
+ 
+EXEC PROCEDURE_INSERT_FRIEND ('마이콜', '010-1234-1231', '쌍문동');
