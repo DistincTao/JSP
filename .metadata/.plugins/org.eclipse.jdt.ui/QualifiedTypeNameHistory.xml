@@ -31,8 +31,6 @@
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="com.ajaxjsp.vo.ManagerVo"/>
-    <fullyQualifiedTypeName name="com.ajaxjsp.vo.JobsVo"/>
-    <fullyQualifiedTypeName name="com.ajaxjsp.vo.DepartmentVo"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
@@ -47,17 +45,19 @@
     <fullyQualifiedTypeName name="java.sql.SQLType"/>
     <fullyQualifiedTypeName name="java.sql.Types"/>
     <fullyQualifiedTypeName name="org.json.simple.JSONObject"/>
-    <fullyQualifiedTypeName name="com.ajaxjsp.dto.EmployeeDto"/>
-    <fullyQualifiedTypeName name="com.ajaxjsp.dto.EmployeeByNameDto"/>
     <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="com.ajaxjsp.etc.OutputJsonForError"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="com.ajaxjsp.dao.DBConnection"/>
-    <fullyQualifiedTypeName name="com.ajaxjsp.etc.JsonParsing"/>
+    <fullyQualifiedTypeName name="org.apache.coyote.http11.upgrade.UpgradeProcessorInternal"/>
+    <fullyQualifiedTypeName name="com.ajaxjsp.dto.EmployeeByNameDto"/>
     <fullyQualifiedTypeName name="com.ajaxjsp.vo.EmployeeVo"/>
+    <fullyQualifiedTypeName name="com.ajaxjsp.vo.JobsVo"/>
+    <fullyQualifiedTypeName name="com.ajaxjsp.vo.DepartmentVo"/>
+    <fullyQualifiedTypeName name="com.ajaxjsp.dto.EmployeeDto"/>
     <fullyQualifiedTypeName name="com.ajaxjsp.dao.EmployeesDao"/>
     <fullyQualifiedTypeName name="com.ajaxjsp.dao.EmployeesDaoImpl"/>
-    <fullyQualifiedTypeName name="org.apache.coyote.http11.upgrade.UpgradeProcessorInternal"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="com.ajaxjsp.etc.JsonParsing"/>
 </qualifiedTypeNameHistroy>
