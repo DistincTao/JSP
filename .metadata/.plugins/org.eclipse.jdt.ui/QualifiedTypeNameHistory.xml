@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.apache.openejb.resource.activemq.jms2.cdi.JMS2CDIExtension.RequestAutoContextDestruction"/>
     <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
@@ -36,10 +35,6 @@
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="com.distinctao.vo.DeptVo"/>
     <fullyQualifiedTypeName name="java.sql.Date"/>
-    <fullyQualifiedTypeName name="com.distinctao.dao.DBConnection"/>
-    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
-    <fullyQualifiedTypeName name="com.distinctao.dao.EmpDao"/>
-    <fullyQualifiedTypeName name="com.distinctao.dao.EmpDaoImpl"/>
     <fullyQualifiedTypeName name="com.distinctao.dto.EmpDto"/>
     <fullyQualifiedTypeName name="java.sql.CallableStatement"/>
     <fullyQualifiedTypeName name="java.sql.SQLType"/>
@@ -48,7 +43,6 @@
     <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="com.ajaxjsp.etc.OutputJsonForError"/>
-    <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="com.ajaxjsp.dao.DBConnection"/>
     <fullyQualifiedTypeName name="org.apache.coyote.http11.upgrade.UpgradeProcessorInternal"/>
     <fullyQualifiedTypeName name="com.ajaxjsp.dto.EmployeeByNameDto"/>
@@ -60,4 +54,10 @@
     <fullyQualifiedTypeName name="com.ajaxjsp.dao.EmployeesDaoImpl"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="com.ajaxjsp.etc.JsonParsing"/>
+    <fullyQualifiedTypeName name="com.distinctao.dao.EmpDao"/>
+    <fullyQualifiedTypeName name="com.distinctao.dao.EmpDaoImpl"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="com.distinctao.dao.DBConnection"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="com.distinctao.vo.EmpVo"/>
 </qualifiedTypeNameHistroy>
