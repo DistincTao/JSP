@@ -58,7 +58,7 @@ $(document).ready(function(){
 	//		async : false,
 			success : function (data){
 				console.log(data);
-			getAllEmps(null, order);	
+			getAllEmps(null, order);
 			},
 			error : function(){},
 			complete : function () {
@@ -67,7 +67,6 @@ $(document).ready(function(){
 		});
 		
 	});
-	
 	
 });
 

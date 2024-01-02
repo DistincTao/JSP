@@ -167,18 +167,29 @@ public class EmpDaoImpl implements EmpDao {
 		return list;
 	}
 
+//	@Override
+//	public EmpVo transEmp(int empNo) throws NamingException, SQLException {
+//		Connection con = DBConnection.getConnection();
+//		PreparedStatement pstmt = null;
+//
+//
+//
+//		DBConnection.closeConnection(rs, pstmt, con);
+//		return vo;
+//	}
+
 	@Override
-	public EmpVo transEmp(int empNo) throws NamingException, SQLException {
+	public void deleteEmp(int empNo) throws NamingException, SQLException {
 		Connection con = DBConnection.getConnection();
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		EmpVo vo = null;
-		String query = "SELECT E.*, D.DNAME FROM EMP E, DEPT D WHERE E.DEPTNO = D.DEPTNO AND EMPNO = ?";
-
+		
 		if (con != null) {
+			String query = "SELECT E.*, D.DNAME FROM EMP E, DEPT D WHERE E.DEPTNO = D.DEPTNO AND EMPNO = ?";
+
 			pstmt = con.prepareStatement(query);
 			pstmt.setInt(1, empNo);
-
 			rs = pstmt.executeQuery();
 
 			while (rs.next()) {
@@ -186,19 +197,8 @@ public class EmpDaoImpl implements EmpDao {
 						rs.getDate("HIREDATE"), rs.getDouble("SAL"), rs.getDouble("COMM"), rs.getInt("DEPTNO"),
 						rs.getString("DNAME"));
 			}
-
-		}
-		DBConnection.closeConnection(rs, pstmt, con);
-		return vo;
-	}
-
-	@Override
-	public void deleteEmp(EmpVo vo) throws NamingException, SQLException {
-		Connection con = DBConnection.getConnection();
-		PreparedStatement pstmt = null;
-		
-		if (con != null) {
-			String query = "INSERT INTO QUIT VALUES (?, ?, ?, ?, ?, ?, ?, ?, SYSDATE)";
+			
+			query = "INSERT INTO QUIT VALUES (?, ?, ?, ?, ?, ?, ?, ?, SYSDATE)";
 			pstmt = con.prepareStatement(query);
 			pstmt.setInt(1, vo.getEmpno());
 			pstmt.setString(2, vo.getEname());

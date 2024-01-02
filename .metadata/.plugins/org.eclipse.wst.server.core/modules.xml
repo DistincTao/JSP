@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <modules>
   <module moduleId="org.eclipse.jst.jee.server:Scott_AjaxJSP" serverId="Tomcat v8.5 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:JSP_Mini_Project_personal" serverId="Tomcat v8.5 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:SimpleJSP" serverId="Apache Tomcat EE v9.0 at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:JSPBasic" serverId="Apache Tomcat EE v9.0 at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:AjaxJSP" serverId="Tomcat v8.5 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:JSP_Mini_Project" serverId="Tomcat v8.5 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:Board" serverId="Apache Tomcat EE v9.0 at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:JSPBaic" serverId="Tomcat v8.5 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:AjaxJSP_test" serverId="Tomcat v8.5 Server at localhost"/>

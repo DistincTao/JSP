@@ -3,12 +3,16 @@ D:\Lectures\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2917837669
 \SimpleJSP\src\main\java
 D:\Lectures\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4273662028.index
 \AjaxJSP_test\src\main\java
-D:\Lectures\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\776890972.index
-\JSPBasic\src\main\java
+D:\Lectures\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3972204361.index
+\JSP_Mini_Project\src\main\java
 D:\Lectures\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3440984194.index
 \AjaxJSP\src\main\java
 D:\Lectures\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4127764763.index
 \Scott_AjaxJSP\src\main\java
+D:\Lectures\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\776890972.index
+\JSPBasic\src\main\java
+D:\Lectures\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\623822489.index
+\JSP_Mini_Project\src\main\java
 D:\Lectures\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1575252989.index
 \JSPBaic\src\main\java
 D:\Lectures\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1889839329.index
@@ -19,8 +23,14 @@ D:\Lectures\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\846417585.
 \JSPBasic\src\main\java
 D:\Lectures\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1707444007.index
 \ BoardTest\src\main\java
+D:\Lectures\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\570546256.index
+\AjaxJSP_test\src\main\java
+D:\Lectures\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2200897606.index
+\JSP_Mini_Project_personal\src\main\java
 D:\Lectures\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3566313582.index
 \JSPBaic\src\main\java
+D:\Lectures\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3486147656.index
+\JSP_Mini_Project_personal\src\main\java
 D:\Lectures\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1080078666.index
 \AjaxJSP\src\main\java
 D:\Lectures\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1615344236.index

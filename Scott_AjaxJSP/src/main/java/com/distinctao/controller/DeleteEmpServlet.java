@@ -29,8 +29,8 @@ public class DeleteEmpServlet extends HttpServlet {
 		EmpDao dao = EmpDaoImpl.getInstance();
 		int empId = Integer.parseInt(request.getParameter("empNo"));
 		try {
-			EmpVo vo = dao.transEmp(empId);
-			dao.deleteEmp(vo);	
+//			EmpVo vo = dao.transEmp(empId);
+			dao.deleteEmp(empId);	
 		} catch (NamingException | SQLException e) {
 			e.printStackTrace();
 		}
