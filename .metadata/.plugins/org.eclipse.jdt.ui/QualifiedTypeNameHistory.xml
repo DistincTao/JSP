@@ -1,20 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.apache.openejb.server.httpd.HttpSession"/>
-    <fullyQualifiedTypeName name="com.distinctao.dto.BaordDTO"/>
-    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
-    <fullyQualifiedTypeName name="com.distinctao.dao.JdbcUtil"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="com.google.gson.JsonArray"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="javax.naming.InitialContext"/>
-    <fullyQualifiedTypeName name="java.sql.Statement"/>
-    <fullyQualifiedTypeName name="org.json.simple.JSONArray"/>
-    <fullyQualifiedTypeName name="java.lang.Exception"/>
-    <fullyQualifiedTypeName name="com.ajaxjsp.vo.ManagerVo"/>
-    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
-    <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="com.distinctao.vo.DeptVo"/>
     <fullyQualifiedTypeName name="com.distinctao.dto.EmpDto"/>
     <fullyQualifiedTypeName name="java.sql.CallableStatement"/>
@@ -53,11 +38,26 @@
     <fullyQualifiedTypeName name="com.jspminipjt.service.MemberService"/>
     <fullyQualifiedTypeName name="java.sql.Date"/>
     <fullyQualifiedTypeName name="com.jspminipjt.vo.MemberVo"/>
-    <fullyQualifiedTypeName name="com.jspminipjt.dao.MemberDao"/>
     <fullyQualifiedTypeName name="com.jspminipjt.dao.MemberDaoImpl"/>
-    <fullyQualifiedTypeName name="com.jspminipjt.dao.MemberDaoCRUD"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="com.jspminipjt.dao.DBConnection"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="com.jspminipjt.service.member.SendMailService"/>
+    <fullyQualifiedTypeName name="com.jspminipjt.dao.MemberDao"/>
+    <fullyQualifiedTypeName name="com.jspminipjt.dao.MemberDaoCRUD"/>
+    <fullyQualifiedTypeName name="java.util.UUID"/>
+    <fullyQualifiedTypeName name="com.jspminipjt.etc.SendEmail"/>
+    <fullyQualifiedTypeName name="java.util.Properties"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.Session"/>
+    <fullyQualifiedTypeName name="javax.mail.Session"/>
+    <fullyQualifiedTypeName name="javax.mail.Authenticator"/>
+    <fullyQualifiedTypeName name="java.net.PasswordAuthentication"/>
+    <fullyQualifiedTypeName name="com.jspminipjt.etc.EmailAccount"/>
+    <fullyQualifiedTypeName name="javax.mail.PasswordAuthentication"/>
+    <fullyQualifiedTypeName name="org.apache.catalina.filters.ExpiresFilter.XServletOutputStream"/>
+    <fullyQualifiedTypeName name="javax.mail.internet.MimeMessage"/>
+    <fullyQualifiedTypeName name="javax.mail.internet.InternetAddress"/>
+    <fullyQualifiedTypeName name="javax.mail.internet.MimeMessage.RecipientType"/>
+    <fullyQualifiedTypeName name="javax.mail.Transport"/>
     <fullyQualifiedTypeName name="org.json.simple.JSONObject"/>
 </qualifiedTypeNameHistroy>
