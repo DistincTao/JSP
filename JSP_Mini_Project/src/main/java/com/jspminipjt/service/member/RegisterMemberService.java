@@ -171,8 +171,8 @@ public class RegisterMemberService implements MemberService {
 			if (item.getSize() > 0) {
 				if (!item.getName().equals(vo.getOriginalFilename())) {
 					ext = vo.getOriginalFilename().substring(vo.getOriginalFilename().lastIndexOf("."));
-					newFileName = item.getName() + ext;
-					originalFileName = vo.getOriginalFilename();
+					newFileName = item.getName();
+					originalFileName = item.getName();
 				} else {
 					if (item.getName().equals(vo.getOriginalFilename())) {
 						ext = vo.getOriginalFilename().substring(vo.getOriginalFilename().lastIndexOf("."));
