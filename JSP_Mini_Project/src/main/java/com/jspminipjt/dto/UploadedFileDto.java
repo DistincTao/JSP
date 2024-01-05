@@ -1,12 +1,12 @@
-package com.jspminipjt.etc;
+package com.jspminipjt.dto;
 
-public class UploadedFile {
+public class UploadedFileDto {
 	private String originalFileName;
 	private String ext;
 	private String newFileName;
 	private long fileSize;
 	
-	public UploadedFile(String originalFileName, String ext, String newFileName, long fileSize) {
+	public UploadedFileDto(String originalFileName, String ext, String newFileName, long fileSize) {
 		super();
 		this.originalFileName = originalFileName;
 		this.ext = ext;

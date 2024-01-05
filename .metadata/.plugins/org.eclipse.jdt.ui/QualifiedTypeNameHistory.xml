@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.distinctao.vo.DeptVo"/>
-    <fullyQualifiedTypeName name="com.distinctao.dto.EmpDto"/>
-    <fullyQualifiedTypeName name="java.sql.CallableStatement"/>
-    <fullyQualifiedTypeName name="java.sql.SQLType"/>
-    <fullyQualifiedTypeName name="java.sql.Types"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
-    <fullyQualifiedTypeName name="com.ajaxjsp.etc.OutputJsonForError"/>
-    <fullyQualifiedTypeName name="com.ajaxjsp.dao.DBConnection"/>
-    <fullyQualifiedTypeName name="org.apache.coyote.http11.upgrade.UpgradeProcessorInternal"/>
     <fullyQualifiedTypeName name="com.ajaxjsp.dto.EmployeeByNameDto"/>
     <fullyQualifiedTypeName name="com.ajaxjsp.vo.JobsVo"/>
     <fullyQualifiedTypeName name="com.ajaxjsp.vo.DepartmentVo"/>
@@ -32,19 +23,13 @@
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="javax.naming.Context"/>
     <fullyQualifiedTypeName name="javax.sql.DataSource"/>
-    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Member"/>
     <fullyQualifiedTypeName name="com.jspminipjt.controller.MemberFactory"/>
     <fullyQualifiedTypeName name="com.jspminipjt.service.MemberService"/>
     <fullyQualifiedTypeName name="java.sql.Date"/>
-    <fullyQualifiedTypeName name="com.jspminipjt.vo.MemberVo"/>
     <fullyQualifiedTypeName name="com.jspminipjt.dao.MemberDaoImpl"/>
-    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
-    <fullyQualifiedTypeName name="com.jspminipjt.dao.DBConnection"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="com.jspminipjt.service.member.SendMailService"/>
-    <fullyQualifiedTypeName name="com.jspminipjt.dao.MemberDao"/>
-    <fullyQualifiedTypeName name="com.jspminipjt.dao.MemberDaoCRUD"/>
     <fullyQualifiedTypeName name="java.util.UUID"/>
     <fullyQualifiedTypeName name="com.jspminipjt.etc.SendEmail"/>
     <fullyQualifiedTypeName name="java.util.Properties"/>
@@ -60,4 +45,19 @@
     <fullyQualifiedTypeName name="javax.mail.internet.MimeMessage.RecipientType"/>
     <fullyQualifiedTypeName name="javax.mail.Transport"/>
     <fullyQualifiedTypeName name="org.json.simple.JSONObject"/>
+    <fullyQualifiedTypeName name="org.apache.commons.fileupload.disk.DiskFileItemFactory"/>
+    <fullyQualifiedTypeName name="org.apache.commons.fileupload.servlet.ServletFileUpload"/>
+    <fullyQualifiedTypeName name="org.apache.commons.fileupload.FileItem"/>
+    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="com.jspminipjt.dao.MemberDao"/>
+    <fullyQualifiedTypeName name="com.jspminipjt.dao.MemberDaoCRUD"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="com.jspminipjt.vo.MemberVo"/>
+    <fullyQualifiedTypeName name="com.jspminipjt.etc.UploadedFile"/>
+    <fullyQualifiedTypeName name="com.jspminipjt.dto.MemberDto"/>
+    <fullyQualifiedTypeName name="com.jspminipjt.dao.DBConnection"/>
+    <fullyQualifiedTypeName name="com.jspminipjt.dao.MemberDaoSql"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="com.jspminipjt.vo.ImageVo"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

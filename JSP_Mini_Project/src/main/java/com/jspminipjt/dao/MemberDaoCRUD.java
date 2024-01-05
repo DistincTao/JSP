@@ -10,7 +10,7 @@ import java.util.List;
 import javax.naming.NamingException;
 
 import com.jspminipjt.dto.MemberDto;
-import com.jspminipjt.etc.UploadedFile;
+import com.jspminipjt.dto.UploadedFileDto;
 import com.jspminipjt.vo.ImageVo;
 import com.jspminipjt.vo.MemberVo;
 
@@ -29,6 +29,7 @@ public class MemberDaoCRUD implements MemberDao {
 		return instance;
 	}
 
+	// ID 중복여부 확인
 	@Override
 	public MemberVo duplicateUserId(String userId) throws NamingException, SQLException {
 		MemberVo result = null;
@@ -76,7 +77,7 @@ public class MemberDaoCRUD implements MemberDao {
 			ImageVo vo = new ImageVo(rs.getInt("file_id"),
 									 rs.getString("original_filename"), 
 									 rs.getString("ext"), 
-									 rs.getString("new_filename"), 
+									  rs.getString("new_filename"), 
 									 rs.getLong("file_size"), 
 									 rs.getString("user_id"));
 			list.add(vo);
@@ -88,7 +89,7 @@ public class MemberDaoCRUD implements MemberDao {
 
 	// 파일이 있을 때 회원 가입 진행
 	@Override
-	public int registerMemberWithFile(UploadedFile uf, MemberDto dto, String pointType, int eachPoint)
+	public int registerMemberWithFile(UploadedFileDto uf, MemberDto dto, String pointType, int eachPoint)
 			throws SQLException, NamingException {
 		System.out.println("regist 호출");
 		Connection con = DBConnection.getInstance().dbConnect();
@@ -119,6 +120,7 @@ public class MemberDaoCRUD implements MemberDao {
 			con.rollback();
 		}
 		
+		con.setAutoCommit(true);
 		DBConnection.getInstance().dbClose(con);
 		
 		return result;
@@ -139,7 +141,7 @@ public class MemberDaoCRUD implements MemberDao {
 		dto.setUserPoint(eachPoint);
 		insertCnt = insertNewMember(dto, con);
 		// point 테이블에 회원가입 포인트 로그 남기기 (2) -2
-		if (insertCnt != -1) {
+		if (insertCnt == 1) {
 			String userId = dto.getUserId();
 			logCnt = insertPointLog(pointType, eachPoint, userId, con);
 		}
@@ -151,6 +153,7 @@ public class MemberDaoCRUD implements MemberDao {
 			con.rollback();
 		}
 		
+		con.setAutoCommit(true);
 		DBConnection.getInstance().dbClose(con);
 		
 		return result;
@@ -158,7 +161,7 @@ public class MemberDaoCRUD implements MemberDao {
 	}
 
 	@Override
-	public int insertUploadedFileInfo(UploadedFile uf, Connection con) throws SQLException, NamingException {
+	public int insertUploadedFileInfo(UploadedFileDto uf, Connection con) throws SQLException, NamingException {
 			
 		int result = -1;
 		PreparedStatement pstmt = null;
@@ -180,7 +183,7 @@ public class MemberDaoCRUD implements MemberDao {
 	}
 	
 	// 현재 업로드된 파일의 file_no를 select 해와서 반환
-	private int getUploadedFileId(Connection con, UploadedFile uf) throws SQLException {
+	private int getUploadedFileId(Connection con, UploadedFileDto uf) throws SQLException {
 		int fileNo = -1;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;

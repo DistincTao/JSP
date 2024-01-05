@@ -7,7 +7,7 @@ import java.util.List;
 import javax.naming.NamingException;
 
 import com.jspminipjt.dto.MemberDto;
-import com.jspminipjt.etc.UploadedFile;
+import com.jspminipjt.dto.UploadedFileDto;
 import com.jspminipjt.vo.ImageVo;
 import com.jspminipjt.vo.MemberVo;
 
@@ -18,13 +18,13 @@ public interface MemberDao {
 	public abstract List<ImageVo> selectAllImg() throws SQLException, NamingException;
 	// ===== 회원 가입 진행 Transaction ====== (C)
 	// 파일이 있을 때 회원 가입 진행 (1)
-	public abstract int registerMemberWithFile(UploadedFile uf, MemberDto dto, String pointType, int eachPoint) throws SQLException, NamingException;
+	public abstract int registerMemberWithFile(UploadedFileDto uf, MemberDto dto, String pointType, int eachPoint) throws SQLException, NamingException;
 	
 	// 파일이 없을 때 회원 가입 진행 (2)
 	public abstract int registerMemberWithoutFile(MemberDto dto, String pointType, int eachPoint) throws SQLException, NamingException;
 	
 	// 업로드된 파일의 정보를 uploadedFile  테이블에 insert (1) - 1
-	public abstract int insertUploadedFileInfo(UploadedFile uf, Connection con) throws SQLException, NamingException;
+	public abstract int insertUploadedFileInfo(UploadedFileDto uf, Connection con) throws SQLException, NamingException;
 	
 	// 회원 정보 insert (1) - 2  / (2) - 1
 	public abstract int insertNewMember (MemberDto dto, Connection con) throws SQLException, NamingException;

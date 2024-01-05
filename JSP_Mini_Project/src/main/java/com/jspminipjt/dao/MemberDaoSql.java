@@ -1,6 +1,10 @@
 package com.jspminipjt.dao;
 
 public class MemberDaoSql {
+	public static final int LOGIN = 5;
+	public static final int SIGNIN =100;
+	public static final int WRITE_BOARD = 10;
+	public static final int WRITE_ANSWER = 5;
 	
 	public static final String SELECT_BY_USERID = "SELECT * FROM member WHERE user_id = ?";
 	public static final String SELECT_ALL_IMAGES = "SELECT u.*, m.user_id FROM uploadedfile u, member m WHERE u.file_id = m.user_img";	
@@ -11,6 +15,5 @@ public class MemberDaoSql {
 	public static final String INSERT_POINTLOG = "INSERT INTO pointlog (point_type, change_point, user_id) values (? , ?, ?)";
 	public static final String SELECT_ALL_MEMBERS = "SELECT user_id, user_email, regdate, user_img, user_point FROM member";
 	public static final String SELECT_POINTLOG = "SELECT * FROM pointlog";
-	
 	
 }
