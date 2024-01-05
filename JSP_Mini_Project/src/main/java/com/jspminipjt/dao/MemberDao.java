@@ -32,7 +32,11 @@ public interface MemberDao {
 	// point 테이블에 회원가입 포인트 로그 남기기 (1) - 3 / (2) -2
 	public abstract int insertPointLog(String pointType, int eachPoint, String userId, Connection con) throws SQLException, NamingException;
 	// ===================================
+	
+	// login 을 위한 아이디 비밀번호 가져오기
 	public abstract MemberVo loginMember(String userId, String userPwd) throws SQLException, NamingException;
+	// 아이디 비밀번호 확인 후 point 적립하기
+	public abstract int addPointToMember(String userId, String pointType, int point) throws SQLException, NamingException;
 	
 	// 전체 회원 정보 조회 (R)
 	// 아이디로 회원 정보 조회 (R)

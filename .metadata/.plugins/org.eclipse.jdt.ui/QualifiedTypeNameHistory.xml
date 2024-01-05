@@ -27,7 +27,6 @@
     <fullyQualifiedTypeName name="java.util.UUID"/>
     <fullyQualifiedTypeName name="com.jspminipjt.etc.SendEmail"/>
     <fullyQualifiedTypeName name="java.util.Properties"/>
-    <fullyQualifiedTypeName name="com.mysql.cj.Session"/>
     <fullyQualifiedTypeName name="javax.mail.Session"/>
     <fullyQualifiedTypeName name="javax.mail.Authenticator"/>
     <fullyQualifiedTypeName name="java.net.PasswordAuthentication"/>
@@ -56,8 +55,9 @@
     <fullyQualifiedTypeName name="com.jspminipjt.dao.MemberDao"/>
     <fullyQualifiedTypeName name="com.jspminipjt.dao.MemberDaoCRUD"/>
     <fullyQualifiedTypeName name="com.mysql.cj.protocol.x.XProtocolError"/>
-    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
-    <fullyQualifiedTypeName name="com.jspminipjt.dao.MemberDaoSql"/>
     <fullyQualifiedTypeName name="com.jspminipjt.vo.MemberVo"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.Session"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="com.jspminipjt.dao.DBConnection"/>
+    <fullyQualifiedTypeName name="com.jspminipjt.dao.MemberDaoSql"/>
 </qualifiedTypeNameHistroy>

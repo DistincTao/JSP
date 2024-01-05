@@ -160,39 +160,6 @@ public class MemberDaoCRUD implements MemberDao {
 		
 	}
 
-	// 로그인 확인
-	@Override
-	public MemberVo loginMember(String userId, String userPwd) throws SQLException, NamingException {
-		System.out.println("login Dao 호출");
-		Connection con = DBConnection.getInstance().dbConnect();
-		MemberVo vo = null;
-		PreparedStatement pstmt = null;
-		ResultSet rs = null;
-		
-		String query = MemberDaoSql.SELECT_LOGIN_INFO;
-		
-		pstmt = con.prepareStatement(query);
-		pstmt.setString(1, userId);
-		pstmt.setString(2, userPwd);
-		rs = pstmt.executeQuery();
-		
-		while (rs.next()) {
-			vo = new MemberVo(rs.getString("user_id"),
-					          rs.getString("user_pwd"),
-					          rs.getString("user_email"),
-					          rs.getDate("regdate"),
-					          rs.getInt("user_img"),
-					          rs.getInt("user_point"),
-					          rs.getString("new_filename"),
-					          rs.getString("is_admin"));
-		}
-	
-		DBConnection.getInstance().dbClose(rs, pstmt, con);
-		return vo;
-	
-	}
-	
-	
 	@Override
 	public int insertUploadedFileInfo(UploadedFileDto uf, Connection con) throws SQLException, NamingException {
 			
@@ -267,6 +234,77 @@ public class MemberDaoCRUD implements MemberDao {
 
 		return result;
 	}
+	
+	
+	// 로그인 확인
+	@Override
+	public MemberVo loginMember(String userId, String userPwd) throws SQLException, NamingException {
+		System.out.println("login Dao 호출");
+		Connection con = DBConnection.getInstance().dbConnect();
+		MemberVo vo = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		
+		String query = MemberDaoSql.SELECT_LOGIN_INFO;
+		
+		pstmt = con.prepareStatement(query);
+		pstmt.setString(1, userId);
+		pstmt.setString(2, userPwd);
+		rs = pstmt.executeQuery();
+		
+		while (rs.next()) {
+			vo = new MemberVo(rs.getString("user_id"),
+					          rs.getString("user_pwd"),
+					          rs.getString("user_email"),
+					          rs.getDate("regdate"),
+					          rs.getInt("user_img"),
+					          rs.getInt("user_point"),
+					          rs.getString("new_filename"),
+					          rs.getString("is_admin"));
+		}
+	
+		DBConnection.getInstance().dbClose(rs, pstmt, con);
+		return vo;
+	
+	}
+	
+	@Override
+	public int addPointToMember(String userId, String pointType, int point) throws SQLException, NamingException {
+		int result = -1;
+		int afterPointLog = -1;
+		
+		Connection con = DBConnection.getInstance().dbConnect();
+		con.setAutoCommit(false);
+		PreparedStatement pstmt = null;
+		String query = MemberDaoSql.UPDATE_POINT_LOGIN;
+		
+		pstmt = con.prepareStatement(query);
+		pstmt.setInt(1, MemberDaoSql.LOGIN);
+		pstmt.setString(2, userId);
+		
+		result = pstmt.executeUpdate();
+		DBConnection.getInstance().dbClose(pstmt);
+		
+		if (result == 1) {
+			//pointlog에 기록 남기기
+			afterPointLog = insertPointLog(pointType, MemberDaoSql.LOGIN, userId, con);
+			if (afterPointLog == 1) {
+				con.commit();
+				result = 1;
+			} else {
+				con.rollback();
+			}
+		} else {
+			con.rollback();
+		}
+		
+		con.setAutoCommit(true);
+		DBConnection.getInstance().dbClose(con);
+		
+		return result;
+	}
+	
+	
 
 	@Override
 	public int insertPointLog(String pointType, int eachPoint, String userId, Connection con) throws SQLException, NamingException {

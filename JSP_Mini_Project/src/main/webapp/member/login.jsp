@@ -26,7 +26,7 @@
     		<label for="uesrPwd" class="form-label">PASSWORD:</label>
    			<input type="password" class="form-control" id="userPwd" placeholder="Enter password" name="userPwd">
  		</div>
-  		<div>  		
+  		<div>
   			<button type="submit" class="btn btn-primary" id="logInBtn" onclick="return validCheck();">Submit</button>
   			<button type="reset" class="btn btn-danger" id="loginResetBtn">Cancel</button>
   		</div>
