@@ -15,5 +15,6 @@ public class MemberDaoSql {
 	public static final String INSERT_POINTLOG = "INSERT INTO pointlog (point_type, change_point, user_id) values (? , ?, ?)";
 	public static final String SELECT_ALL_MEMBERS = "SELECT user_id, user_email, regdate, user_img, user_point FROM member";
 	public static final String SELECT_POINTLOG = "SELECT * FROM pointlog";
+	public static final String SELECT_LOGIN_INFO = "SELECT m.*, u.new_filename FROM member m, uploadedfile u WHERE m.user_img = u.file_id and user_id = ? AND user_pwd = sha1(md5(?))";
 	
 }
