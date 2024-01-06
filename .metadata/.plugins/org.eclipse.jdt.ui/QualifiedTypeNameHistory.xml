@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.ajaxjsp.dao.EmployeesDaoImpl"/>
     <fullyQualifiedTypeName name="com.distinctao.dao.EmpDao"/>
     <fullyQualifiedTypeName name="com.distinctao.dao.EmpDaoImpl"/>
     <fullyQualifiedTypeName name="com.distinctao.dao.DBConnection"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="com.jspminipjt.dao.DBConnection"/>
     <fullyQualifiedTypeName name="com.jspminipjt.dao.MemberDaoSql"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
 </qualifiedTypeNameHistroy>
