@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.distinctao.dao.EmpDao"/>
-    <fullyQualifiedTypeName name="com.distinctao.dao.EmpDaoImpl"/>
-    <fullyQualifiedTypeName name="com.distinctao.dao.DBConnection"/>
-    <fullyQualifiedTypeName name="com.distinctao.vo.EmpVo"/>
     <fullyQualifiedTypeName name="com.google.gson.JsonObject"/>
     <fullyQualifiedTypeName name="com.ajaxjsp.etc.JsonParsing"/>
     <fullyQualifiedTypeName name="com.google.gson.Gson"/>
@@ -37,27 +33,31 @@
     <fullyQualifiedTypeName name="javax.mail.internet.MimeMessage.RecipientType"/>
     <fullyQualifiedTypeName name="javax.mail.Transport"/>
     <fullyQualifiedTypeName name="org.json.simple.JSONObject"/>
-    <fullyQualifiedTypeName name="org.apache.commons.fileupload.disk.DiskFileItemFactory"/>
-    <fullyQualifiedTypeName name="org.apache.commons.fileupload.servlet.ServletFileUpload"/>
-    <fullyQualifiedTypeName name="org.apache.commons.fileupload.FileItem"/>
     <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
-    <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="com.jspminipjt.etc.UploadedFile"/>
-    <fullyQualifiedTypeName name="com.jspminipjt.dto.MemberDto"/>
     <fullyQualifiedTypeName name="com.jspminipjt.vo.ImageVo"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="org.omg.PortableInterceptor.ORBInitInfoPackage.DuplicateName"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
-    <fullyQualifiedTypeName name="com.jspminipjt.dto.UploadedFileDto"/>
-    <fullyQualifiedTypeName name="com.jspminipjt.controller.MemberFactory"/>
     <fullyQualifiedTypeName name="com.jspminipjt.service.member.LoginMemberService"/>
     <fullyQualifiedTypeName name="com.jspminipjt.dao.MemberDao"/>
     <fullyQualifiedTypeName name="com.jspminipjt.dao.MemberDaoCRUD"/>
     <fullyQualifiedTypeName name="com.mysql.cj.protocol.x.XProtocolError"/>
     <fullyQualifiedTypeName name="com.jspminipjt.vo.MemberVo"/>
     <fullyQualifiedTypeName name="com.mysql.cj.Session"/>
-    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
-    <fullyQualifiedTypeName name="com.jspminipjt.dao.DBConnection"/>
-    <fullyQualifiedTypeName name="com.jspminipjt.dao.MemberDaoSql"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="com.jspminipjt.controller.MemberFactory"/>
+    <fullyQualifiedTypeName name="org.apache.tomcat.util.http.fileupload.disk.DiskFileItemFactory"/>
+    <fullyQualifiedTypeName name="org.apache.tomcat.util.http.fileupload.servlet.ServletFileUpload"/>
+    <fullyQualifiedTypeName name="org.apache.commons.fileupload.disk.DiskFileItemFactory"/>
+    <fullyQualifiedTypeName name="org.apache.commons.fileupload.servlet.ServletFileUpload"/>
+    <fullyQualifiedTypeName name="org.apache.commons.fileupload.FileItem"/>
+    <fullyQualifiedTypeName name="com.jspminipjt.dto.UploadedFileDto"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="com.jspminipjt.dto.MemberDto"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="com.jspminipjt.dao.MemberDaoSql"/>
+    <fullyQualifiedTypeName name="com.jspminipjt.dao.DBConnection"/>
+    <fullyQualifiedTypeName name="com.jspminipjt.vo.uploadedFileVo"/>
+    <fullyQualifiedTypeName name="com.jspminipjt.vo.UploadedFileVo"/>
 </qualifiedTypeNameHistroy>
