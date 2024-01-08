@@ -60,7 +60,7 @@
 					회원 이메일 : ${requestScope.memberInfo.userEmail }
 					<button type="button" class="btn btn-success" id="selectEmail">수정</button>
 			
-				<p class="card-text">회원 가입일 : ${sessionScope.login.regdate }</p>
+				<p class="card-text">회원 가입일 : ${requestScope.memberInfo.regdate }</p>
 				<p class="card-text">
 					<span> 보유 포인트 : ${requestScope.memberInfo.userPoint } </span>
 					<span> 포인트 이력 : ${requestScope.pointlog } </span>

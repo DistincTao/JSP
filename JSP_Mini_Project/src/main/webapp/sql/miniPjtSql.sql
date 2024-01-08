@@ -72,5 +72,10 @@ SELECT * FROM pointlog;
 
 SELECT u.*, m.user_id FROM uploadedfile u, member m WHERE u.file_id = m.user_img;
 
-SELECT * FROM member WHERE user_id = ? AND user_pwd = sha1(md5(?))
+SELECT * FROM member WHERE user_id = ? AND user_pwd = sha1(md5(?));
 
+SELECT m.*, u.new_filename FROM member m, uploadedfile u WHERE m.user_img = u.file_id and user_id = ? AND user_pwd = sha1(md5(?));
+
+UPDATE member SET user_point = userPoint + ? WHERE user_id = ? 
+
+SELECT * FROM pointlog WHERE user_id = ?
