@@ -59,6 +59,7 @@ public class RegisterMemberService implements MemberService {
 		
 		try {
 			List<FileItem> list = servletFileUpload.parseRequest(request);
+
 			for (FileItem item : list) {
 				System.out.println(item.toString());
 				
@@ -69,7 +70,7 @@ public class RegisterMemberService implements MemberService {
 				
 				if (item.isFormField()) {
 					if (item.getFieldName().equals("userId")) {
-						userId = item.getString(encoding);
+						userId = item.getString(encoding);						System.out.println(userId + "12312312312");
 					} else if (item.getFieldName().equals("userPwd")) {
 						userId = item.getString(encoding);
 					} else if (item.getFieldName().equals("userEmail")) {
@@ -89,9 +90,9 @@ public class RegisterMemberService implements MemberService {
 					
 					item.write(fileToSave);
 				}
-				System.out.println(userId + " " + userPwd + " " + userEmail + " " + ufDto);
 
 			}
+				System.out.println(userId + " " + userPwd + " " + userEmail + " " + ufDto);
 					
 		} catch (SQLException | NamingException e) {
 			// TODO Auto-generated catch block
@@ -113,6 +114,7 @@ public class RegisterMemberService implements MemberService {
 				result = dao.registerMemberWithFile(ufDto, new MemberDto(userId, userPwd, userEmail, null, 1, 0), "signin", MemberDaoSql.SIGNIN);
 				System.out.println(result + " => 결과 with 파일");
 			} else {
+				// 2) upload된 파일이 없는 경우
 				result = dao.registerMemberWithoutFile (new MemberDto(userId, userPwd, userEmail, null, 1, 0), "signin", MemberDaoSql.SIGNIN);
 				System.out.println(result + " => 결과 without 파일");
 			}
@@ -124,7 +126,6 @@ public class RegisterMemberService implements MemberService {
 			e.printStackTrace();
 		}
 		
-		// 2) upload된 파일이 없는 경우
 		
 		
 		return mf;

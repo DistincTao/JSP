@@ -9,6 +9,7 @@ import javax.naming.NamingException;
 import com.jspminipjt.dto.MemberDto;
 import com.jspminipjt.dto.UploadedFileDto;
 import com.jspminipjt.vo.ImageVo;
+import com.jspminipjt.vo.MemberPointVo;
 import com.jspminipjt.vo.MemberVo;
 
 public interface MemberDao {
@@ -37,6 +38,12 @@ public interface MemberDao {
 	public abstract MemberVo loginMember(String userId, String userPwd) throws SQLException, NamingException;
 	// 아이디 비밀번호 확인 후 point 적립하기
 	public abstract int addPointToMember(String userId, String pointType, int point) throws SQLException, NamingException;
+	// 해당 아이디 맴버 정보 가져오기ㅏ
+	public abstract MemberVo getMemberInfo(String userId)throws SQLException, NamingException;
+	// 해당 맴버의 포인트 기록 가져오기
+	public abstract List<MemberPointVo> getMembePointInfo(String userId)throws SQLException, NamingException;
+
+	
 	
 	// 전체 회원 정보 조회 (R)
 	// 아이디로 회원 정보 조회 (R)

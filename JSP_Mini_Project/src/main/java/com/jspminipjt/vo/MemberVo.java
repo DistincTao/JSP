@@ -51,6 +51,7 @@ public class MemberVo {
 		this.memberImg = memberImg;
 		this.isAdmin = isAdmin;
 	}
+	
 
 	public String getUserId() {
 		return userId;
@@ -84,12 +85,15 @@ public class MemberVo {
 		return isAdmin;
 	}
 
+
 	@Override
 	public String toString() {
 		return "MemberVo [userId=" + userId + ", userPwd=" + userPwd + ", userEmail=" + userEmail + ", regdate="
 				+ regdate + ", userImg=" + userImg + ", userPoint=" + userPoint + ", memberImg=" + memberImg
 				+ ", isAdmin=" + isAdmin + "]";
 	}
+
+	
 
 
 	

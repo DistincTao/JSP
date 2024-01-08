@@ -12,6 +12,7 @@ import javax.naming.NamingException;
 import com.jspminipjt.dto.MemberDto;
 import com.jspminipjt.dto.UploadedFileDto;
 import com.jspminipjt.vo.ImageVo;
+import com.jspminipjt.vo.MemberPointVo;
 import com.jspminipjt.vo.MemberVo;
 
 public class MemberDaoCRUD implements MemberDao {
@@ -319,6 +320,63 @@ public class MemberDaoCRUD implements MemberDao {
 
 		return result;
 		
+	}
+
+	@Override
+	public MemberVo getMemberInfo(String userId) throws SQLException, NamingException {
+		MemberVo vo = null;
+		
+		Connection con = DBConnection.getInstance().dbConnect();
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		
+		String query = MemberDaoSql.SELECT_LOGIN_USER_INFO;
+		
+		pstmt = con.prepareStatement(query);
+		pstmt.setString(1, userId);
+		
+		rs = pstmt.executeQuery();
+		
+		while (rs.next()) {
+			vo = new MemberVo(rs.getString("user_id"),
+					          rs.getString("user_pwd"),
+					          rs.getString("user_email"),
+					          rs.getDate("regdate"),
+					          rs.getInt("user_img"),
+					          rs.getInt("user_point"),
+					          rs.getString("new_filename"),
+					          rs.getString("is_admin"));
+		}
+		
+		DBConnection.getInstance().dbClose(rs, pstmt, con);
+		return vo;
+	}
+
+	@Override
+	public List<MemberPointVo> getMembePointInfo(String userId) throws SQLException, NamingException {
+		List<MemberPointVo> volist = new ArrayList<>();
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		Connection con = DBConnection.getInstance().dbConnect();
+		
+		String query = MemberDaoSql.SELECT_USER_POINTLOG;
+		
+		pstmt = con.prepareStatement(query);
+		pstmt.setString(1, userId);
+		
+		rs = pstmt.executeQuery();
+		
+		while (rs.next()) {
+			MemberPointVo vo = new MemberPointVo(rs.getInt("pointlog_no"),
+												 rs.getDate("action_date"),
+												 rs.getString("point_type"),
+												 rs.getInt("change_point"),
+												 rs.getString("user_id"));
+			volist.add(vo);
+		}
+
+		DBConnection.getInstance().dbClose(rs, pstmt, con);
+		return volist;
 	}
 
 

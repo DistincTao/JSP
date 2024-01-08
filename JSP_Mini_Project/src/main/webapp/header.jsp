@@ -44,7 +44,7 @@
 			</c:when>
 		  	<c:otherwise>
 	     	    <li class="nav-item">
-	     	    	 <a class="nav-link" href="${contextPath }/member/mypage.jsp"> ${sessionScope.login.userId}
+	     	    	 <a class="nav-link" href="${contextPath }/member/myPage.mem?userId=${sessionScope.login.userId}"> ${sessionScope.login.userId}
 	     	    	 	<img src="${contextPath }/${sessionScope.login.memberImg }" id="userImg">
 	     	    	 </a>
 

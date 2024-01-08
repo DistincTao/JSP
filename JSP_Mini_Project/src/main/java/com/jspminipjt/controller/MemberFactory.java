@@ -5,6 +5,7 @@ import com.jspminipjt.service.member.ConfirmEmailCodeService;
 import com.jspminipjt.service.member.DuplicateUserIdService;
 import com.jspminipjt.service.member.LoginMemberService;
 import com.jspminipjt.service.member.LogoutMemberService;
+import com.jspminipjt.service.member.MyPageService;
 import com.jspminipjt.service.member.RegisterMemberService;
 import com.jspminipjt.service.member.SendMailService;
 
@@ -59,6 +60,8 @@ public class MemberFactory {
 			result = new LoginMemberService();
 		} else if (command.equals("/member/logout.mem")) {
 			result = new LogoutMemberService();
+		} else if (command.equals("/member/myPage.mem")) {
+			result = new MyPageService();
 		}
 		
 		return result;

@@ -51,7 +51,8 @@ public class MemberServlet extends HttpServlet {
 		if (mf != null && mf.isRedirect()) {
 			response.sendRedirect(mf.getWhereToGo());
 		}
-
+		
+		return;
 	}
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

@@ -41,7 +41,9 @@ public class LoginMemberService implements MemberService {
 				vo = dao.loginMember(userId, userPwd);
 				sess.setAttribute("login", vo); // session에 로그인 유저 정보 바인딩
 				
-				request.getRequestDispatcher("../index.jsp").forward(request, response);
+//				request.getRequestDispatcher("../index.jsp").forward(request, response);
+				mf.setRedirect(true);
+				mf.setWhereToGo(request.getContextPath() + "/index.jsp?status=success");
 				
 			} else {
 				mf.setRedirect(true);
