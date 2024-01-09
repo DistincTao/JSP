@@ -50,6 +50,25 @@ public class BoardDto {
 		return ref;
 	}
 	
+	
+	public void setBoardNo(int boardNo) {
+		this.boardNo = boardNo;
+	}
+	public void setWriter(String writer) {
+		this.writer = writer;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public void setPostDate(Timestamp postDate) {
+		this.postDate = postDate;
+	}
+	public void setContent(String content) {
+		this.content = content;
+	}
+	public void setRef(int ref) {
+		this.ref = ref;
+	}
 	@Override
 	public String toString() {
 		return "BaordVo [writer=" + writer + ", title=" + title + ", postDate=" + postDate

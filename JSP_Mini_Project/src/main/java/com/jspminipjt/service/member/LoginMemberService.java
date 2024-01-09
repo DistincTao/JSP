@@ -36,10 +36,12 @@ public class LoginMemberService implements MemberService {
 			if (vo != null) { // 로그인 성공
 				System.out.println(vo.toString());
 				// member 테이블에 포인트를 update하고,pointlog에 기록 남기기
-				result = dao.addPointToMember(userId, "login", MemberDaoSql.LOGIN);
+				result = dao.addPointToMember(vo.getUserId(), "login", MemberDaoSql.LOGIN);
 				System.out.println("login transaction : " + result);
 				vo = dao.loginMember(userId, userPwd);
-				sess.setAttribute("login", vo); // session에 로그인 유저 정보 바인딩
+				if (result == 1) {
+					sess.setAttribute("login", vo); // session에 로그인 유저 정보 바인딩				
+				}
 				
 //				request.getRequestDispatcher("../index.jsp").forward(request, response);
 				mf.setRedirect(true);

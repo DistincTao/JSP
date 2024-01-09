@@ -24,6 +24,29 @@ public class UploadFileVo {
 		this.userId = userId;
 	}
 
+	public UploadFileVo(int fileId, String originalFilename, String ext, String newFilename, Long fileSize, int boardNo) {
+		super();
+		this.fileId = fileId;
+		this.originalFilename = originalFilename;
+		this.ext = ext;
+		this.newFilename = newFilename;
+		this.fileSize = fileSize;
+		this.boardNo = boardNo;
+
+	}
+	
+	public UploadFileVo(int fileId, String originalFilename, String ext, String newFilename, Long fileSize, int boardNo,
+			String base64String) {
+		super();
+		this.fileId = fileId;
+		this.originalFilename = originalFilename;
+		this.ext = ext;
+		this.newFilename = newFilename;
+		this.fileSize = fileSize;
+		this.boardNo = boardNo;
+		this.base64String = base64String;
+	}
+	
 	public UploadFileVo(int fileId, String originalFilename, String ext, String newFilename, Long fileSize, int boardNo,
 			String base64String, String userId) {
 		super();

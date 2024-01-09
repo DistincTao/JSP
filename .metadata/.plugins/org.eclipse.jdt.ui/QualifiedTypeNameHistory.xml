@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.jspminipjt.service.MemberService"/>
     <fullyQualifiedTypeName name="com.jspminipjt.dao.MemberDaoImpl"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="com.jspminipjt.service.member.SendMailService"/>
@@ -58,6 +57,7 @@
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="com.jspminipjt.dto.board.BoardDto"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="com.jspminipjt.dao.member.MemberDaoCRUD"/>
     <fullyQualifiedTypeName name="com.jspminipjt.dao.board.BoardDaoSql"/>
     <fullyQualifiedTypeName name="com.jspminipjt.dao.DBConnection"/>
 </qualifiedTypeNameHistroy>

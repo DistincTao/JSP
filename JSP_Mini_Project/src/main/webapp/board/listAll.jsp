@@ -34,7 +34,7 @@
 					<tbody>
 
 						<c:forEach var="board" items="${boardList }">
-							<tr>
+							<tr id="board${board.boardNo }" class="board" onclick="location.href='viewBoard.bo?boardNo=${board.boardNo}'">
 								<td>${board.boardNo }</td>
 								<td>${board.title }</td>
 								<td>${board.writer }</td>

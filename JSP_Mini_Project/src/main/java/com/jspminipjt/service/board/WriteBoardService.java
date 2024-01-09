@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.sql.Timestamp;
+import java.util.Base64;
 import java.util.List;
 
 import javax.naming.NamingException;
@@ -15,6 +16,7 @@ import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileUploadException;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
+import org.apache.commons.io.FileUtils;
 import org.omg.CORBA.BAD_INV_ORDER;
 
 import com.jspminipjt.controller.board.BoardFactory;
@@ -50,9 +52,7 @@ public class WriteBoardService implements BoardService {
 		int result = -1;
 		String writer = "";
 		String title = "";
-		Timestamp postDate = null;
 		String content = "";
-		int boardNo = 0;
 		UploadedFileDto ufDto = null;
 		String encoding = "utf-8";
 		
@@ -90,11 +90,11 @@ public class WriteBoardService implements BoardService {
 					
 					// 파일을 하드디스크에 저장
 					File fileToSave = null;
-					
 					fileToSave = new File(realPath + File.separator + ufDto.getNewFileName());
-					
 					try {
 						file.write(fileToSave);
+						ufDto.setBase64String(makeImgToBase64String(realPath + File.separator + ufDto.getNewFileName()));
+						
 					} catch (Exception e) {
 						e.printStackTrace();
 					}
@@ -109,19 +109,20 @@ public class WriteBoardService implements BoardService {
 			e.printStackTrace();
 		}
 		
-		// ======== 사진 등록 진행 ==========
+		// ======== 게시판 내용 등록 진행 ==========
 		
-		try {
+		BoardDto dto = new BoardDto(-1, writer, title, null, content, 0);
+		try { // 업로드된 파일이 있는 경우
 			if (ufDto != null) {
 				ufDto.setNewFileName("board_uploads/" + ufDto.getNewFileName());
-				result = dao.insertBoardTransactionWithFile(new BoardDto(-1, writer, title, postDate, content, result), ufDto, "write_board", BoardDaoSql.WRITE_BOARD);
+				result = dao.insertBoardTransactionWithFile(dto, ufDto, "write_board", BoardDaoSql.WRITE_BOARD);
 				System.out.println(result + " => 결과 with 파일");
-			} else {
-				result = dao.insertBoardTransactionWithoutFile(new BoardDto(-1, writer, title, postDate, content, result), "write_board", BoardDaoSql.WRITE_BOARD);
+			} else { // 업호드도니 파일이 없는 경우
+				result = dao.insertBoardTransactionWithoutFile(dto, "write_board", BoardDaoSql.WRITE_BOARD);
 				System.out.println(result + " => 결과 without 파일");
 			}
 			if (result == 1) {
-				System.out.println("회원가입 성공!!");
+				System.out.println("글쓰기 성공!!");
 			}
 			
 		} catch (NamingException | SQLException e) {
@@ -135,7 +136,7 @@ public class WriteBoardService implements BoardService {
 				deleteFile.delete(); // 파일 삭제
 			}
 			
-			// 회원 가입시 예외 발생 시 => 회원가입 페이지로 이동
+			// 글 작성 중 예외 발생 시 => 게시판 페이지로 이동
 			bf.setRedirect(true);
 			bf.setWhereToGo(request.getContextPath() +"/board/writeBoard.jsp?status=fail");
 			
@@ -146,6 +147,39 @@ public class WriteBoardService implements BoardService {
 		bf.setWhereToGo(request.getContextPath() + "/board/listAll.bo");
 		
 		return bf;
+	}
+
+	private String makeImgToBase64String(String uploadedFile) {
+		// img 파일을 base64String으로 만들기
+		// encoding (파일 -> 문자열)
+		String result = null;
+		
+		File upFile = new File(uploadedFile);
+		byte[] file;
+		try {
+			file = FileUtils.readFileToByteArray(upFile);
+			result = Base64.getEncoder().encodeToString(file);
+			System.out.println("Base64 인코딩 결과 : " + result);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		// 디코딩 (base64 문자열 -> 파일)
+//		String encodedStr = result;
+//		
+//		byte[] decodedArr = Base64.getDecoder().decode(encodedStr);
+//		String realPath = "D:\\Lectures\\JSP\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp2\\wtpwebapps\\JSP_Mini_Project\\board_uploads";
+//		File fi = new File(realPath + File.separator + "aaa.jpg");
+//		try {
+//			FileUtils.writeByteArrayToFile(fi, decodedArr);
+//			System.out.println("베이스 64 문자열을 파일로 저장 완료");
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+		
+		return result;
 	}
 
 	private UploadedFileDto getNewFileNameWithSerial(FileItem file, List<UploadFileVo> voList) {
@@ -160,6 +194,7 @@ public class WriteBoardService implements BoardService {
 			}
 			if (file.getSize() > 0) {
 				if (!file.getName().equals(vo.getOriginalFilename())) {
+					ext = file.getName().substring(file.getName().lastIndexOf("."));
 					newFileName = file.getName();
 					originalFileName = file.getName();
 				} else {
@@ -177,4 +212,6 @@ public class WriteBoardService implements BoardService {
 		return ufDto;
 	}
 
+	
+	
 }

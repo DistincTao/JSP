@@ -1,6 +1,7 @@
 package com.jspminipjt.controller.board;
 
 import com.jspminipjt.service.BoardService;
+import com.jspminipjt.service.board.GetBoardByNoService;
 import com.jspminipjt.service.board.GetEntireBoardService;
 import com.jspminipjt.service.board.WriteBoardService;
 
@@ -43,6 +44,8 @@ public class BoardFactory {
 			result = new GetEntireBoardService();
 		} else if (command.equals("/board/writeBoard.bo")) {
 			result = new WriteBoardService();
+		} else if (command.equals("/board/viewBoard.bo")) {
+			result = new GetBoardByNoService();
 		}
 		
 		return result;

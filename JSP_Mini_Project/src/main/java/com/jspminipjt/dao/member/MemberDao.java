@@ -41,7 +41,7 @@ public interface MemberDao {
 	// 해당 아이디 맴버 정보 가져오기ㅏ
 	public abstract MemberVo getMemberInfo(String userId)throws SQLException, NamingException;
 	// 해당 맴버의 포인트 기록 가져오기
-	public abstract List<MemberPointVo> getMembePointInfo(String userId)throws SQLException, NamingException;
+	public abstract List<MemberPointVo> getMemberPointInfo(String userId)throws SQLException, NamingException;
 
 	
 	

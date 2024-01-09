@@ -33,7 +33,7 @@ public class MyPageService implements MemberService {
 		
 		try {
 			vo = dao.getMemberInfo(userId);
-			list = dao.getMembePointInfo(userId);
+			list = dao.getMemberPointInfo(userId);
 			
 			request.setAttribute("memberInfo", vo);
 			request.setAttribute("pointlog", list);

@@ -11,9 +11,13 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="../js/mypage.js"></script>
 <link rel="stylesheet" href="../css/header.css?after">
 <link rel="stylesheet" href="../css/mypage.css?after">
@@ -37,16 +41,16 @@
 			<div class="input-group mb-3">
 				<input type="text" class="form-control" id="userId" readonly
 					value="${requestScope.memberInfo.userId }">
-				<button class="btn btn-success" type="button" id="changePwdBtn">change PW</button>
+				<button class="btn btn-success" type="button" id="changePwdBtn">change
+					PW</button>
 			</div>
-
 		</div>
 
 		<div class="mb-3 mt-3">
 			<div class="input-group mb-3">
 				<input type="text" class="form-control" readonly
 					value="${requestScope.memberInfo.userEmail }">
-				<button class="btn btn-success" type="submit">Change</button>
+				<button class="btn btn-success" type="submit" id="changEmailBtn">Change</button>
 			</div>
 			<div class="codeDiv" style="display: none;">
 				<input type="text" class="form-control" id="emailCode"
@@ -55,6 +59,7 @@
 					Check Code</button>
 			</div>
 		</div>
+		
 		<div class="mb-3 mt-3 pointlog">
 			<div class="pointInfo">
 				<h3>보유 적립금</h3>
@@ -81,41 +86,82 @@
 				</tbody>
 			</table>
 		</div>
-	<!-- The Modal -->
-<div class="modal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Modal Heading</h4>
-        <button type="button" class="btn-close modalClose" data-bs-dismiss="modal"></button>
-      </div>
-
-      <!-- Modal body -->
-      <div class="modal-body">
-       	<div class="mb-3 mt-3">
-    		<label for="uesrPwd" class="form-label">PASSWORD:</label>
-   			<input type="password" class="form-control" id="userPwd" placeholder="Enter password" name="userPwd">
- 		</div>
-  		<div class="mb-3 mt-3">
-    		<label for="uesrPwd2" class="form-label">PASSWORD CONFIRM:</label>
-   			<input type="password" class="form-control" id="userPwd2" placeholder="Enter password">
- 		</div>
-      </div>
-
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger modalClose" data-bs-dismiss="modal">Close</button>
-      </div>
-
-    </div>
-  </div>
-</div>	
 		
+		<!-- The Modal -->
+		<div class="modal changePwd">
+			<div class="modal-dialog">
+				<div class="modal-content">
 
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title">비밀번호 변경</h4>
+						<button type="button" class="btn-close modalClose"
+							data-bs-dismiss="modal"></button>
+					</div>
 
-	</div>
-	<jsp:include page="../footer.jsp"></jsp:include>
+					<!-- Modal body -->
+					<div class="modal-body">
+						<div class="mb-3 mt-3">
+							<label for="uesrPwd" class="form-label">PASSWORD:</label> <input
+								type="password" class="form-control" id="userPwd"
+								placeholder="Enter password" name="userPwd">
+						</div>
+						<div class="mb-3 mt-3">
+							<label for="uesrPwd2" class="form-label">PASSWORD
+								CONFIRM:</label> <input type="password" class="form-control"
+								id="userPwd2" placeholder="Enter password">
+						</div>
+
+						<!-- Modal footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger modalClose"
+								data-bs-dismiss="modal">Close</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- The Modal -->
+		<div class="modal changeEmail">
+			<div class="modal-dialog">
+				<div class="modal-content">
+
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title">이메일 변경</h4>
+						<button type="button" class="btn-close modalClose"
+							data-bs-dismiss="modal"></button>
+					</div>
+
+					<!-- Modal body -->
+					<div class="modal-body">
+						<div class="mb-3 mt-3">
+							<label for="userEmail" class="form-label">EMAIL:</label> <input
+								type="text" class="form-control" id="userEmail"
+								placeholder="example@얀.com" name="userEmail">
+							<button type="button" class="btn btn-warning" id="sendEmailBtn">Email
+								Validate</button>
+							<div class="codeDiv" style="display: none;">
+								<input type="text" class="form-control" id="emailCode"
+									placeholder="Enter Valification Code" name="userImg">
+								<button type="button" class="btn btn-warning confirmCode">
+									Check Code</button>
+							</div>
+						</div>
+
+						<!-- Modal footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger modalClose"
+								data-bs-dismiss="modal">Close</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+</div>
+		<jsp:include page="../footer.jsp"></jsp:include>
 </body>
 </html>

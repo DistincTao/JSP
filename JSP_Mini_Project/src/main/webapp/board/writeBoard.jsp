@@ -23,7 +23,7 @@
 <jsp:include page="../header.jsp"></jsp:include>
 <!-- 로그인 하지 않은 유저는 login.jsp로 돌려보내기 -->
 <c:if test="${sessionScope.login == null }">
-	<c:redirect url="${contextPath }/member/login.jsp"></c:redirect>
+	<c:redirect url="../member/login.jsp"></c:redirect>
 </c:if>	
 
 <div class="container">

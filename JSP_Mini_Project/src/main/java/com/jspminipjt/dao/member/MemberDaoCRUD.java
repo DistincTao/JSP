@@ -275,24 +275,24 @@ public class MemberDaoCRUD implements MemberDao {
 		Connection con = DBConnection.getInstance().dbConnect();
 		con.setAutoCommit(false);
 		PreparedStatement pstmt = null;
-		String query = MemberDaoSql.UPDATE_POINT_LOGIN;
-		
+		String query = MemberDaoSql.UPDATE_POINT_LOGIN; 
+//		System.out.println(query);
 		pstmt = con.prepareStatement(query);
-		pstmt.setInt(1, MemberDaoSql.LOGIN);
+		pstmt.setInt(1, point);
 		pstmt.setString(2, userId);
 		
 		result = pstmt.executeUpdate();
+		System.out.println(result);
 		DBConnection.getInstance().dbClose(pstmt);
 		
 		if (result == 1) {
-			//pointlog에 기록 남기기
-			afterPointLog = insertPointLog(pointType, MemberDaoSql.LOGIN, userId, con);
-			if (afterPointLog == 1) {
-				con.commit();
-				result = 1;
-			} else {
-				con.rollback();
-			}
+			afterPointLog = insertPointLog(pointType, point, userId, con);
+		  if (afterPointLog == 1) {
+			con.commit();
+			result = 1;
+		  } else {
+			  con.rollback();
+		  }
 		} else {
 			con.rollback();
 		}
@@ -354,7 +354,7 @@ public class MemberDaoCRUD implements MemberDao {
 	}
 
 	@Override
-	public List<MemberPointVo> getMembePointInfo(String userId) throws SQLException, NamingException {
+	public List<MemberPointVo> getMemberPointInfo(String userId) throws SQLException, NamingException {
 		List<MemberPointVo> volist = new ArrayList<>();
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
