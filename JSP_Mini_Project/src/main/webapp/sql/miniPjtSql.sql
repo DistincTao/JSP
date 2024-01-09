@@ -127,7 +127,22 @@ INSERT INTO uploadedfile (original_filename, ext, new_filename, file_size, board
 INSERT INTO board (writer, title, post_date, content, ref) VALUES (?, ?, ?, ?, (SELECT MAX(b.board_no) + 1 as board_no FROM board b));
 
 Alter table member auto_increment = 1;
-Alter table board auto_increment = 1;
+Alter table board auto_increment = 5;
 Alter table uploadedfile auto_increment = 1;
 Alter table pointlog auto_increment = 1;
+
+SELECT * FROM readcountprocess WHERE read_no =? AND ip_addr = ?;
+
+SELECT TimestampDIFF(hour, read_time, now()) as diff_hour FROM readcountprocess WHERE ip_addr = '127.0.0.1' AND read_no = 1;
+
+SELECT TimestampDIFF(hour, (Select read_time  FROM readcountprocess WHERE ip_addr = '127.0.0.1' AND read_no = 1), now());
+
+
+INSERT INTO readcountprocess (ip_addr, board_no) values (?, ?);
+ 
+update readcountprocess set read_time = now() WHERE ip_addr = ? AND board_no =?;
+
+-- n번 글의 조회수 증가 쿼리문
+
+update board set read_count = read_count + 1 where board_no = ?;
 
