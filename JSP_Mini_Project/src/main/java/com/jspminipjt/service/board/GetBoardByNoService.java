@@ -12,6 +12,8 @@ import com.jspminipjt.controller.board.BoardFactory;
 import com.jspminipjt.dao.board.BoardDao;
 import com.jspminipjt.dao.board.BoardDaoCRUD;
 import com.jspminipjt.service.BoardService;
+import com.jspminipjt.vo.UploadFileVo;
+import com.jspminipjt.vo.board.BoardVo;
 
 public class GetBoardByNoService implements BoardService {
 
@@ -21,7 +23,9 @@ public class GetBoardByNoService implements BoardService {
 		int boardNo = Integer.parseInt(request.getParameter("boardNo"));
 
 		System.out.println("상세 조회할 게시판 글번호  : " + boardNo);
-
+		BoardFactory bf = BoardFactory.getInstance();
+		BoardVo boardVo = null;
+		UploadFileVo fileVo = null;
 		// 클라이어트 ip 주소 얻어오기
 		String userIp = getIp(request);
 		int result = -1;
@@ -38,14 +42,14 @@ public class GetBoardByNoService implements BoardService {
 			} else { 	// 해당 아이피 주소와 글번호가 같은 것이 없으면 (글 최초 조회)
 				// 아이피 주소와 글번호와 읽을 시간을 readcountprocess 테이블에서 insert
 				// 해당 글 번호의 readcount를 update
-				result = dao.readCountPocessWithReadCnt(userIp, boardNo, "insert");
+				dao.readCountPocessWithReadCnt(userIp, boardNo, "insert");
 
 			}
-			if (result == 1) {
-				dao.updateReadcount(boardNo);
-			}
-			
-			// 해당 글을 가져옴 (select)
+				boardVo = dao.selectByBoardNo(boardNo);
+				fileVo = dao.getFile(boardNo);
+				request.setAttribute("board", boardVo);
+				request.setAttribute("file", fileVo);
+				request.getRequestDispatcher("/board/viewBoard.jsp").forward(request, response);
 			
 			
 		} catch (SQLException | NamingException e) {

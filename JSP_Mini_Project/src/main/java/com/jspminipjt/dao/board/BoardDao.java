@@ -39,6 +39,20 @@ public interface BoardDao {
 	// 3) 아이피 주소와 글번호, 읽은 시간을 readcountprocess 테이블에 update  또는 insert 
 	public abstract int readCountPocessWithReadCnt(String userIp, int boardNo, String mode) throws SQLException, NamingException;
 	// board 에 readCount 증가
-	public abstract int updateReadcount(int boardNo)  throws SQLException, NamingException;
+	public abstract int updateReadcount(int boardNo, Connection con) throws SQLException, NamingException;
+	// board no에 따른 내용 불러오기
+	public abstract BoardVo selectByBoardNo(int boardNo) throws SQLException, NamingException;
+	// board no에 따른 파일 불러오기
+	public abstract UploadFileVo getFile(int boardNo) throws NamingException, SQLException;
+	// board isDelete update
+	public abstract int deletBoard(int boardNo) throws NamingException, SQLException;
+	// board 내용 update with File
+	public abstract int updateBoardTransactionWithFile(BoardDto dto, UploadedFileDto ufDto) throws NamingException, SQLException;
+	// board 내용 update without File
+	public abstract int updateBoardTransactionWithoutFile(BoardDto dto) throws NamingException, SQLException;
+	// board 업로드 파일 내용 수정
+	public abstract int updateUploadedFileInfo(UploadedFileDto ufDto, Connection con) throws NamingException, SQLException;
+	// board 파일 삭제
+	public abstract int deleteUploadedFile(String boardNo)  throws NamingException, SQLException;
 
 }

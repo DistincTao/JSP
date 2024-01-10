@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="com.jspminipjt.service.member.SendMailService"/>
     <fullyQualifiedTypeName name="java.util.UUID"/>
     <fullyQualifiedTypeName name="com.jspminipjt.etc.SendEmail"/>
@@ -42,8 +41,6 @@
     <fullyQualifiedTypeName name="com.jspminipjt.dao.MemberDaoSql"/>
     <fullyQualifiedTypeName name="com.jspminipjt.service.BoardService"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
-    <fullyQualifiedTypeName name="com.jspminipjt.vo.board.BoardVo"/>
-    <fullyQualifiedTypeName name="com.jspminipjt.controller.board.BoardFactory"/>
     <fullyQualifiedTypeName name="java.sql.Timestamp"/>
     <fullyQualifiedTypeName name="com.jspminipjt.dto.member.UploadedFileDto"/>
     <fullyQualifiedTypeName name="org.apache.commons.fileupload.disk.DiskFileItemFactory"/>
@@ -58,6 +55,9 @@
     <fullyQualifiedTypeName name="com.jspminipjt.dto.board.BoardDto"/>
     <fullyQualifiedTypeName name="com.jspminipjt.dao.board.BoardDaoCRUD"/>
     <fullyQualifiedTypeName name="com.jspminipjt.dao.board.BoardDaoSql"/>
-    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="com.jspminipjt.controller.board.BoardFactory"/>
     <fullyQualifiedTypeName name="com.jspminipjt.dao.DBConnection"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="com.jspminipjt.vo.board.BoardVo"/>
 </qualifiedTypeNameHistroy>

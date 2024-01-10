@@ -26,6 +26,14 @@ public class BoardDto {
 		this.ref = ref;
 
 	}
+
+	public BoardDto(int boardNo, String title, String content) {
+		super();
+		this.boardNo = boardNo;
+		this.title = title;
+		this.content = content;
+		
+	}
 	
 	public int getBoardNo() {
 		return boardNo;

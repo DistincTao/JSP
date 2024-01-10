@@ -20,7 +20,7 @@
 <jsp:include page="./header.jsp"></jsp:include>
 <div class="container">
 	<h1>login.jsp</h1>
-	<p>${login } </p>
+<%-- 	<p>${login } </p> --%>
 </div>
 
 <jsp:include page="./footer.jsp"></jsp:include>

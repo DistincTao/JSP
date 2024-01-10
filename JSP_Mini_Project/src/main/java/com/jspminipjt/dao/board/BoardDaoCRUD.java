@@ -321,6 +321,7 @@ public class BoardDaoCRUD implements BoardDao {
 			throws SQLException, NamingException {
 		int result = -1;
 		Connection con = DBConnection.getInstance().dbConnect();
+		con.setAutoCommit(false);
 		PreparedStatement pstmt = null;
 		if (mode.equals("insert")) {
 			String query = BoardDaoSql.INSERT_READTIME;
@@ -330,6 +331,11 @@ public class BoardDaoCRUD implements BoardDao {
 			pstmt.setInt(2, boardNo);
 			result = pstmt.executeUpdate();
 			
+			DBConnection.getInstance().dbClose(pstmt);
+			
+			result = updateReadcount(boardNo, con);
+
+			
 		} else if (mode.equals("update")) {
 			String query = BoardDaoSql.UPDATE_READTIME;
 			
@@ -337,17 +343,30 @@ public class BoardDaoCRUD implements BoardDao {
 			pstmt.setString(1, userIp);
 			pstmt.setInt(2, boardNo);
 			result = pstmt.executeUpdate();	
+			
+			DBConnection.getInstance().dbClose(pstmt);
+			
+			result = updateReadcount(boardNo, con);
+
 		}
 		
-		DBConnection.getInstance().dbClose(pstmt, con);
+		if (result != -1) {
+			System.out.println("조회수 반영 완료");
+			con.commit();
+		} else {
+			con.rollback();
+		}
+		
+		con.setAutoCommit(true);
+
+		DBConnection.getInstance().dbClose(con);
 		return result;
 	}
 
 	@Override
-	public int updateReadcount(int boardNo) throws SQLException, NamingException {
+	public int updateReadcount(int boardNo, Connection con) throws SQLException, NamingException {
 		int result = -1;
 		
-		Connection con = DBConnection.getInstance().dbConnect();
 		PreparedStatement pstmt = null;
 
 		String query = BoardDaoSql.UPDATE_READCOUNT;
@@ -355,10 +374,217 @@ public class BoardDaoCRUD implements BoardDao {
 		pstmt = con.prepareStatement(query);
 		pstmt.setInt(1, boardNo);
 		result = pstmt.executeUpdate();	
-
 		
+		DBConnection.getInstance().dbClose(pstmt);
+		
+		return result;
+	}
+
+	@Override
+	public BoardVo selectByBoardNo(int boardNo) throws SQLException, NamingException {
+		System.out.println(boardNo + "번 게시판 내용 불러오기");
+		BoardVo vo = null;
+		Connection con = DBConnection.getInstance().dbConnect();
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		
+		String query = BoardDaoSql.SELECT_BY_BOARD_NO;
+		pstmt = con.prepareStatement(query);
+		pstmt.setInt(1, boardNo);
+		rs = pstmt.executeQuery();
+		
+		while (rs.next()) {
+			vo = new BoardVo(rs.getInt("board_no"),
+							 rs.getString("writer"),
+							 rs.getString("title"),
+							 rs.getTimestamp("post_date"),
+							 rs.getString("content"),
+							 rs.getInt("read_count"),
+							 rs.getInt("like_count"),
+							 rs.getInt("ref"),
+							 rs.getInt("step"),
+							 rs.getInt("ref_order"),
+							 rs.getString("isDelete"));
+		}
+		
+		return vo;
+	}
+	
+	@Override
+	public UploadFileVo getFile(int boardNo) throws NamingException, SQLException {
+		System.out.println("게시판 파일 불러오기 시작"); 
+		UploadFileVo vo = null;
+		
+		Connection con = DBConnection.getInstance().dbConnect();
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		
+		String query = "SELECT * FROM uploadedfile WHERE board_no = ?";
+		
+		pstmt = con.prepareStatement(query);
+		pstmt.setInt(1, boardNo);
+		
+		rs = pstmt.executeQuery();
+		
+		while (rs.next()) {
+			vo = new UploadFileVo(rs.getInt("file_id"),
+								  rs.getString("original_filename"),
+								  rs.getString("ext"),
+								  rs.getString("new_filename"),
+								  rs.getLong("file_size"),
+								  rs.getInt("board_no"),
+								  rs.getString("base64String"));
+		}
+		
+		DBConnection.getInstance().dbClose(rs, pstmt, con);
+		return vo;
+		 
+	}
+
+	@Override
+	public int deletBoard(int boardNo) throws NamingException, SQLException {
+		System.out.println(boardNo + "번 삭제 진행 중");
+		int result = -1;
+		Connection con = DBConnection.getInstance().dbConnect();
+		con.setAutoCommit(false);
+		PreparedStatement pstmt = null;
+		
+		String query = BoardDaoSql.DELET_BOARD;
+		
+		pstmt = con.prepareStatement(query);
+		pstmt.setInt(1, boardNo);
+		
+		result = pstmt.executeUpdate();
+		
+		if (result == 1 ) {
+			con.commit();
+		} else {
+			con.rollback();
+		}
+		
+		con.setAutoCommit(true);
+		DBConnection.getInstance().dbClose(pstmt, con);
+		return result;
+	}
+
+	@Override
+	public int updateBoardTransactionWithFile(BoardDto dto, UploadedFileDto ufDto) throws NamingException, SQLException {
+		System.out.println(dto.getBoardNo() + "번 수정 진행 중");
+		int result = -1;
+		int boardCnt= -1;
+		Connection con = DBConnection.getInstance().dbConnect();
+		con.setAutoCommit(false);
+		PreparedStatement pstmt = null;
+		
+		String query = BoardDaoSql.UPDATE_BOARD;
+		
+		// 보드 수정
+		pstmt = con.prepareStatement(query);
+		pstmt.setString(1, dto.getTitle());
+		pstmt.setString(2, dto.getContent());
+		pstmt.setInt(3, dto.getBoardNo());
+		
+		boardCnt = pstmt.executeUpdate();
+		
+		if (boardCnt == 1) {
+			// upload 파일 내용 수정
+			result = updateUploadedFileInfo(ufDto, con);
+		}	
+		if (result == 1) {
+			con.commit();
+		} else {
+			con.rollback();
+		}
+		
+		con.setAutoCommit(true);
+		DBConnection.getInstance().dbClose(pstmt, con);
+		
+		return result;
+		
+		
+	}
+
+	@Override
+	public int updateUploadedFileInfo(UploadedFileDto ufDto, Connection con) throws NamingException, SQLException {
+		System.out.println("파일 정부 수정 진행 중");
+		int result = -1;
+		PreparedStatement pstmt = null;
+		
+		String query = BoardDaoSql.UPDATE_UPLOADEDFILE;
+		
+		pstmt = con.prepareStatement(query);
+		pstmt.setString(1, ufDto.getOriginalFileName());
+		pstmt.setString(2, ufDto.getExt());
+		pstmt.setString(3, ufDto.getNewFileName());
+		pstmt.setLong(4, ufDto.getFileSize());
+		pstmt.setString(5, ufDto.getBase64String());
+		pstmt.setInt(6, ufDto.getBoardNo());
+		
+		result = pstmt.executeUpdate();
+		
+		DBConnection.getInstance().dbClose(pstmt);
+
+		return result;
+	}
+
+	@Override
+	public int updateBoardTransactionWithoutFile(BoardDto dto) throws NamingException, SQLException {
+		System.out.println(dto.getBoardNo() + "번 수정 진행 중");
+		int result = -1;
+		Connection con = DBConnection.getInstance().dbConnect();
+		con.setAutoCommit(false);
+		PreparedStatement pstmt = null;
+		
+		String query = BoardDaoSql.UPDATE_BOARD;
+		
+		pstmt = con.prepareStatement(query);
+		pstmt.setString(1, dto.getTitle());
+		pstmt.setString(2, dto.getContent());
+		pstmt.setInt(3, dto.getBoardNo());
+		
+		result = pstmt.executeUpdate();
+		
+		if (result == 1) {
+			con.commit();
+		} else {
+			con.rollback();
+		}
+		
+		con.setAutoCommit(true);
 		DBConnection.getInstance().dbClose(pstmt, con);
 		
 		return result;
 	}
+
+	@Override
+	public int deleteUploadedFile(String boardNo) throws NamingException, SQLException {
+		System.out.println("게시판 파일 삭제 진행");
+		
+		int result = -1;
+		Connection con = DBConnection.getInstance().dbConnect();
+		con.setAutoCommit(false);
+		PreparedStatement pstmt = null;
+		
+		String query = "";
+		
+		pstmt = con.prepareStatement(query);
+		pstmt.setString(1, boardNo);
+
+		
+		result = pstmt.executeUpdate();
+		
+		if (result == 1) {
+			con.commit();
+		} else {
+			con.rollback();
+		}
+		
+		con.setAutoCommit(true);
+		DBConnection.getInstance().dbClose(pstmt, con);
+		
+		return result;
+		
+	}
+	
+	
 }
