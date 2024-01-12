@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="javax.mail.Authenticator"/>
     <fullyQualifiedTypeName name="java.net.PasswordAuthentication"/>
     <fullyQualifiedTypeName name="com.jspminipjt.etc.EmailAccount"/>
     <fullyQualifiedTypeName name="javax.mail.PasswordAuthentication"/>
@@ -49,15 +48,16 @@
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="com.jspminipjt.vo.UploadFileVo"/>
-    <fullyQualifiedTypeName name="org.apache.commons.fileupload.FileItem"/>
     <fullyQualifiedTypeName name="java.lang.Character"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
     <fullyQualifiedTypeName name="com.jspminipjt.controller.board.BoardFactory"/>
     <fullyQualifiedTypeName name="com.jspminipjt.dao.board.BoardDao"/>
-    <fullyQualifiedTypeName name="com.jspminipjt.dao.DBConnection"/>
-    <fullyQualifiedTypeName name="com.jspminipjt.dao.board.BoardDaoCRUD"/>
     <fullyQualifiedTypeName name="com.jspminipjt.dao.board.BoardDaoSql"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="com.jspminipjt.dto.board.BoardDto"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="org.apache.commons.fileupload.FileItem"/>
+    <fullyQualifiedTypeName name="com.jspminipjt.dao.board.BoardDaoCRUD"/>
+    <fullyQualifiedTypeName name="com.jspminipjt.dao.DBConnection"/>
+    <fullyQualifiedTypeName name="com.jspminipjt.vo.PagingInfoVo"/>
 </qualifiedTypeNameHistroy>
