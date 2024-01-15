@@ -31,4 +31,9 @@ public class BoardDaoSql {
 	public static final String DELETE_UPLOADEDFILE = "DELETE FROM uploadedfile WHERE board_no =?";
 	public static final String SELECT_TOTALPOST = "SELECT count(*) AS total_post FROM board";
 	public static final String SELECT_ALL_BOARD_BY_PAGING = "SELECT * FROM board ORDER BY ref DESC, ref_order LIMIT ? , ?";
+
+	public static final String SELECT_TOTALPOST_SEARCH = "SELECT count(*) AS total_post FROM board WHERE ";
+	public static final String SELECT_SEARCH_BOARD_BY_PAGING = "SELECT * FROM board WHERE ";
+
+
 }

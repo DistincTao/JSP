@@ -40,15 +40,16 @@
                     <div class="col-lg-7">
                         <div>
                             <h1 class="display-6 mb-4">${requestScope.board.title }</h1>
-                            <p class="fs-7 text-uppercase ">글번호 : ${requestScope.board.boardNo }</p>
+                            <p class="fs-7 text-uppercase boardNo">글번호 : <span id="boardNo">${requestScope.board.boardNo }</span></p>
                             <p class="fs-7 text-uppercase text-primary">작성자 : ${requestScope.board.writer }</p>
-                            <p class="fs-7 text-uppercase ">작성일 : ${requestScope.board.postDate }</p>
+                            <p class="fs-7 text-uppercase">작성일 : ${requestScope.board.postDate }</p>
                             <div class="counts">
 	                            <div class="fs-7 text-uppercase">
 	                            	<img src="../img/book.png" style="width : 24px; height : 24px;"><span class="badge bg-primary">${requestScope.board.readCount }</span>
                             	</div>
-	                            <div class="fs-7 text-uppercase likeCnt">
-	                            	<i class="fa-regular fa-heart" style="width : 24px; height : 24px; color : red;" id="likeCnt"></i><span class="badge bg-primary">${requestScope.board.likeCount }</span>
+	                            <div class="fs-7 text-uppercase likeCnt" >
+	                            	<i class="fa-regular fa-heart" style="width : 24px; height : 24px; color : red;" id="likeCnt"></i>
+	                            	<span class="badge bg-primary">${requestScope.board.likeCount }</span>
                             	</div>
                             </div>
                             <div class="mb-3 fs-6">${requestScope.board.content }</div>

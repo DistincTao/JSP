@@ -6,3 +6,8 @@
 .pagination {
 	justify-content: center;
 } 
+
+.searchArea {
+	display : flex;
+	justify-content: flex-end;
+}

@@ -1,4 +1,4 @@
-package com.jspminipjt.dto;
+package com.jspminipjt.dto.board;
 
 import java.sql.Date;
 

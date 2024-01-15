@@ -8,6 +8,7 @@ import javax.naming.NamingException;
 
 import com.jspminipjt.dto.UploadedFileDto;
 import com.jspminipjt.dto.board.BoardDto;
+import com.jspminipjt.dto.board.SearchCriteriaDto;
 import com.jspminipjt.vo.PagingInfoVo;
 import com.jspminipjt.vo.UploadFileVo;
 import com.jspminipjt.vo.board.BoardVo;
@@ -62,5 +63,11 @@ public interface BoardDao {
 	public abstract int insertReplyTransaction(BoardDto dto) throws NamingException, SQLException;
 	// 총 페이지수 가져오기
 	public abstract int getTotalPostCnt()  throws NamingException, SQLException;
+	
+	// 검색어 처리
+	// 게시글 중 검색어가 있을 때
+	public abstract int getTotalPostCnt(SearchCriteriaDto dto) throws NamingException, SQLException;
+	// 검색어가 있을 때 게시판 목록 검색
+	public abstract List<BoardVo> selectAllBoard(PagingInfoVo paging, SearchCriteriaDto dto) throws NamingException, SQLException;
 
 }

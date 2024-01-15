@@ -17,14 +17,17 @@ $(function() {
 	})
 
 	$('#likeCnt').click(function () {
-		 console.log('1');
+		let boardNo =$("#boardNo").html(); 
+		console.log(boardNo, userId);
+//		 console.log('1');
 		 $.ajax({
 			url : 'likeCount.bo',
 			type : 'post',
-			data : {"tmpUserEmail" : tmpUserEmail},
+			data : {"boardNo" : boardNo},
 			dataType : 'json',
 			async: false,
 			success : function(data) {
+				console.log(data)
 
 			},
 			error : function() {
@@ -121,4 +124,4 @@ function deleteBoard () {
 //			}
 //		}
 //	}
-}
+//}

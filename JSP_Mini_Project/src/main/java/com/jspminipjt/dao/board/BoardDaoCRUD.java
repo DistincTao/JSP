@@ -12,6 +12,7 @@ import javax.naming.NamingException;
 import com.jspminipjt.dao.DBConnection;
 import com.jspminipjt.dto.UploadedFileDto;
 import com.jspminipjt.dto.board.BoardDto;
+import com.jspminipjt.dto.board.SearchCriteriaDto;
 import com.jspminipjt.vo.PagingInfoVo;
 import com.jspminipjt.vo.UploadFileVo;
 import com.jspminipjt.vo.board.BoardVo;
@@ -63,6 +64,48 @@ public class BoardDaoCRUD implements BoardDao {
 		pstmt = con.prepareStatement(query);
 		pstmt.setInt(1, paging.getStartRowIndex());
 		pstmt.setInt(2, paging.getPagePostCnt());
+		rs = pstmt.executeQuery();
+
+		while (rs.next()) {
+			vo = new BoardVo(rs.getInt("board_no"), rs.getString("writer"), rs.getString("title"),
+					rs.getTimestamp("post_date"), rs.getString("content"), rs.getInt("read_count"),
+					rs.getInt("like_count"), rs.getInt("ref"), rs.getInt("step"), rs.getInt("ref_order"),
+					rs.getString("isDelete"));
+
+			list.add(vo);
+		}
+
+		DBConnection.getInstance().dbClose(rs, pstmt, con);
+		return list;
+
+	}
+	
+	@Override
+	public List<BoardVo> selectAllBoard(PagingInfoVo paging, SearchCriteriaDto dto) throws NamingException, SQLException {
+		List<BoardVo> list = new ArrayList<>();
+		BoardVo vo = null;
+
+		Connection con = DBConnection.getInstance().dbConnect();
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+
+		String query = BoardDaoSql.SELECT_SEARCH_BOARD_BY_PAGING;
+		
+		if (dto.getSearchType().equals("writer")) {
+			query += "writer LIKE ? "; 
+		} else if (dto.getSearchType().equals("title")) {
+			query += "title LIKE ? ";			
+		} else if (dto.getSearchType().equals("content")) {
+			query += "content LIKE ? ";			
+		} 
+		
+		query += "ORDER BY ref DESC, ref_order LIMIT ? , ?";
+
+		pstmt = con.prepareStatement(query);
+//		pstmt.setString(1, dto.getSearchType());
+		pstmt.setString(1, "%" + dto.getSearchWord() + "%");
+		pstmt.setInt(2, paging.getStartRowIndex());
+		pstmt.setInt(3, paging.getPagePostCnt());
 		rs = pstmt.executeQuery();
 
 		while (rs.next()) {
@@ -748,7 +791,7 @@ public class BoardDaoCRUD implements BoardDao {
 
 	@Override
 	public int getTotalPostCnt() throws NamingException, SQLException {
-		int totalPostCnt = 0;
+		int totalPostCnt = -1;
 		Connection con = DBConnection.getInstance().dbConnect();
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
@@ -762,6 +805,32 @@ public class BoardDaoCRUD implements BoardDao {
 			totalPostCnt = rs.getInt("total_post");
 		}
 
+		DBConnection.getInstance().dbClose(rs, pstmt, con);
+		return totalPostCnt;
+	}
+
+	@Override
+	public int getTotalPostCnt(SearchCriteriaDto dto) throws NamingException, SQLException {
+		int totalPostCnt = -1;
+		Connection con = DBConnection.getInstance().dbConnect();
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		String query = BoardDaoSql.SELECT_TOTALPOST_SEARCH;			
+		if (dto.getSearchType().equals("writer")) {
+			query += "writer LIKE ?"; 
+		} else if (dto.getSearchType().equals("title")) {
+			query += "title LIKE ?";			
+		} else if (dto.getSearchType().equals("content")) {
+			query += "content LIKE ?";			
+		} 
+		
+		pstmt = con.prepareStatement(query);
+		pstmt.setString(1, "%" + dto.getSearchWord() + "%"); 
+		rs = pstmt.executeQuery();
+		while (rs.next()) {
+			totalPostCnt = rs.getInt("total_post");
+		}
+		
 		DBConnection.getInstance().dbClose(rs, pstmt, con);
 		return totalPostCnt;
 	}

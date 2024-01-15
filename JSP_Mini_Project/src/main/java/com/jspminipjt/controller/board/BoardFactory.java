@@ -56,7 +56,7 @@ public class BoardFactory {
 			result = new DeleteBoardService();
 		} else if (command.equals("/board/replyBoard.bo")) {
 			result = new ReplyBoardService();
-		} else if (command.equals("/member/likeCount.bo")) {
+		} else if (command.equals("/board/likeCount.bo")) {
 			result = new LikeCountService();
 		}
 		
