@@ -12,7 +12,9 @@ import javax.naming.NamingException;
 import com.jspminipjt.dao.DBConnection;
 import com.jspminipjt.dto.UploadedFileDto;
 import com.jspminipjt.dto.board.BoardDto;
+import com.jspminipjt.dto.board.LikeCountDto;
 import com.jspminipjt.dto.board.SearchCriteriaDto;
+import com.jspminipjt.vo.LikeCountVo;
 import com.jspminipjt.vo.PagingInfoVo;
 import com.jspminipjt.vo.UploadFileVo;
 import com.jspminipjt.vo.board.BoardVo;
@@ -835,5 +837,197 @@ public class BoardDaoCRUD implements BoardDao {
 		return totalPostCnt;
 	}
 
+	@Override
+	public int addLikeCountTransaction(LikeCountDto dto) throws NamingException, SQLException {
+		System.out.println("like count transaction 시작");
+		int result = -1;
+		int logCnt = -1;
+		int likeLog = -1;
+		Connection con = DBConnection.getInstance().dbConnect();
+		con.setAutoCommit(false);
+		
+		logCnt = selectLikeLog(dto, con);
+		if (logCnt == 0) {
+			likeLog = insertLikeLog(dto, con);			
+		}
+		if (likeLog == 1) {
+			result = updateLikeCount(dto, con);
+		}
+		if (likeLog == 1 && result == 1) {
+			result = 1;
+			con.commit();
+		} else {
+			con.rollback();
+		}
+		
+		
+		con.setAutoCommit(true);
+		DBConnection.getInstance().dbClose(con);
+		return result;
+	}
+	
+	@Override
+	public int selectLikeLog(LikeCountDto dto, Connection con) throws SQLException, NamingException {
+		int result = -1;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		String query = null;
+		
+		query = BoardDaoSql.SELECT_LIKECOUNTLOG;
+		pstmt = con.prepareStatement(query);
+		pstmt.setInt(1, dto.getBoardNo());
+		pstmt.setString(2, dto.getUserId());
+		
+		rs = pstmt.executeQuery();
+		
+		while (rs.next()) {
+			result = rs.getInt("likecount");
+		}
+		
+		DBConnection.getInstance().dbClose(pstmt);
+		return result;
+	}
+	
+	@Override
+	public LikeCountVo selectLikeLog(int boardNo, String userId) throws SQLException, NamingException {
+		LikeCountVo vo = null;
+		Connection con = DBConnection.getInstance().dbConnect();
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		String query = null;
+		
+		query = BoardDaoSql.SELECT_LIKECOUNTLOG_LIST;
+		pstmt = con.prepareStatement(query);
+		pstmt.setInt(1, boardNo);
+		pstmt.setString(2, userId);
+		
+		rs = pstmt.executeQuery();
+		
+		while (rs.next()) {
+			vo = new LikeCountVo(rs.getInt("like_no"),
+								 rs.getInt("board_no"),
+							     rs.getString("user_id"),
+								 rs.getDate("like_date"));
+		}
+
+		DBConnection.getInstance().dbClose(pstmt);
+		return vo;
+	}
+
+	private int insertLikeLog(LikeCountDto dto, Connection con) throws SQLException, NamingException {
+		int result = -1;
+		PreparedStatement pstmt = null;
+		String query = null;
+		
+		query = BoardDaoSql.INSERT_LIKECOUNT_LOG_ID;
+		pstmt = con.prepareStatement(query);
+		pstmt.setInt(1, dto.getBoardNo());
+		pstmt.setString(2, dto.getUserId());
+		
+		result = pstmt.executeUpdate();
+
+		DBConnection.getInstance().dbClose(pstmt);
+		return result;
+	}
+
+	private int updateLikeCount(LikeCountDto dto, Connection con) throws SQLException, NamingException {
+		int result = -1;
+		
+		PreparedStatement pstmt = null;
+
+		String query = BoardDaoSql.UPDATE_LIKECOUNT;
+		
+		pstmt = con.prepareStatement(query);
+		pstmt.setInt(1, dto.getBoardNo());
+		result = pstmt.executeUpdate();	
+		
+		DBConnection.getInstance().dbClose(pstmt);
+		
+		return result;
+	}
+
+	@Override
+	public int selectLikeCount(int boardNo) throws NamingException, SQLException {
+		int result = -1;
+		
+		Connection con = DBConnection.getInstance().dbConnect();
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		
+		String query = BoardDaoSql.SELECT_LIKECOUNT;
+		
+		pstmt = con.prepareStatement(query);
+		pstmt.setInt(1, boardNo);
+		
+		rs = pstmt.executeQuery();
+		
+		while (rs.next()) {
+			result = rs.getInt("like_count");
+		}
+		
+		return result;
+	}
+
+	@Override
+	public int deleteLikeCountTransaction(LikeCountDto dto) throws NamingException, SQLException {
+		System.out.println("like count transaction 시작");
+		int result = -1;
+		int logCnt = -1;
+		int likeLog = -1;
+		Connection con = DBConnection.getInstance().dbConnect();
+		con.setAutoCommit(false);
+		
+		logCnt = selectLikeLog(dto, con);
+		if (logCnt == 1) {
+			likeLog = deleteLikeLog(dto, con);			
+		}
+		if (likeLog == 1) {
+			result = updateLikeCountMinus(dto, con);
+		}
+		if (likeLog == 1 && result == 1) {
+			result = 1;
+			con.commit();
+		} else {
+			con.rollback();
+		}
+		
+		
+		con.setAutoCommit(true);
+		DBConnection.getInstance().dbClose(con);
+		return result;
+	}
+
+	private int updateLikeCountMinus(LikeCountDto dto, Connection con) throws SQLException {
+		int result = -1;
+		
+		PreparedStatement pstmt = null;
+
+		String query = BoardDaoSql.UPDATE_LIKECOUNT_MINUS;
+		
+		pstmt = con.prepareStatement(query);
+		pstmt.setInt(1, dto.getBoardNo());
+		result = pstmt.executeUpdate();	
+		
+		DBConnection.getInstance().dbClose(pstmt);
+		
+		return result;
+	}
+
+	private int deleteLikeLog(LikeCountDto dto, Connection con) throws SQLException {
+		int result = -1;
+		
+		PreparedStatement pstmt = null;
+
+		String query = BoardDaoSql.DELETE_LIKECOUNTLOG;
+		
+		pstmt = con.prepareStatement(query);
+		pstmt.setInt(1, dto.getBoardNo());
+		pstmt.setString(2, dto.getUserId());
+		result = pstmt.executeUpdate();	
+		
+		DBConnection.getInstance().dbClose(pstmt);
+		
+		return result;
+	}
 	
 }

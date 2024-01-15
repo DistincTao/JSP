@@ -2,6 +2,7 @@ package com.jspminipjt.controller.board;
 
 import com.jspminipjt.service.BoardService;
 import com.jspminipjt.service.board.DeleteBoardService;
+import com.jspminipjt.service.board.DeleteLikeCountService;
 import com.jspminipjt.service.board.GetBoardByNoService;
 import com.jspminipjt.service.board.GetEntireBoardService;
 import com.jspminipjt.service.board.LikeCountService;
@@ -58,6 +59,8 @@ public class BoardFactory {
 			result = new ReplyBoardService();
 		} else if (command.equals("/board/likeCount.bo")) {
 			result = new LikeCountService();
+		} else if (command.equals("/board/deleteLikeCount.bo")) {
+			result = new DeleteLikeCountService();
 		}
 		
 		

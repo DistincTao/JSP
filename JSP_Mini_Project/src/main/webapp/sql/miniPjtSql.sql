@@ -193,7 +193,7 @@ SELECT * FROM board ORDER BY ref desc, ref_order limit  ? , 5;
 --------- 페이징 블럭처리 --------
 -- 1,2 / 3,4/ 5,6/ 7,8/
 -- 1) 한개의 블럭에 몇개의 페이지를 보여줄 것인지 (pageCntPerBlock) : 2
--- => 전체 페이징 블럭의 갯수 ? 전체 페이지 / 블럭 갯수  + 1  ((페이지 번호 // 2)) * 2
+-- => 전체 페이징 블럭의 갯수 ? 전체 페이지 / 블럭pageCntPerBlock갯수  (+ 1)
 
 -- 2) 현재 페이지가 속한 페이징 블럭 번호
 -- 현재 페이지가 2 => 1번 블럭
@@ -204,6 +204,8 @@ SELECT * FROM board ORDER BY ref desc, ref_order limit  ? , 5;
 
 -- 4) 현재 페이징 블럭 끝 페이지 번호 == (블럭 번호 / pageCntPerBlock)
 
-SELECT * 
+
+----------------- 검색어 + 유형 처리 -----------------------
+
 
 

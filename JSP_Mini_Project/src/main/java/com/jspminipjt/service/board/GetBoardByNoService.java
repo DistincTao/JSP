@@ -13,6 +13,7 @@ import com.jspminipjt.controller.board.BoardFactory;
 import com.jspminipjt.dao.board.BoardDao;
 import com.jspminipjt.dao.board.BoardDaoCRUD;
 import com.jspminipjt.service.BoardService;
+import com.jspminipjt.vo.LikeCountVo;
 import com.jspminipjt.vo.UploadFileVo;
 import com.jspminipjt.vo.board.BoardVo;
 import com.jspminipjt.vo.member.MemberVo;
@@ -28,9 +29,12 @@ public class GetBoardByNoService implements BoardService {
 		BoardFactory bf = BoardFactory.getInstance();
 		BoardVo boardVo = null;
 		UploadFileVo fileVo = null;
+		LikeCountVo likeVo = null;
+		HttpSession sess = request.getSession();
 
 		// 클라이어트 ip 주소 얻어오기
 		String userIp = getIp(request);
+		MemberVo vo = (MemberVo) sess.getAttribute("login");
 		int result = -1;
 		BoardDao dao = BoardDaoCRUD.getInstance();
 		 // 해당 아이피 주소와 글번호가 같은 것이 있으면
@@ -48,12 +52,16 @@ public class GetBoardByNoService implements BoardService {
 				dao.readCountPocessWithReadCnt(userIp, boardNo, "insert");
 
 			}
+			if (vo != null ) {
+				likeVo = dao.selectLikeLog(boardNo, vo.getUserId());
+				if (likeVo != null)
+				request.setAttribute("likeLog", likeVo);
+			}
 				boardVo = dao.selectByBoardNo(boardNo);
 				fileVo = dao.getFile(boardNo);
 				request.setAttribute("board", boardVo);
 				request.setAttribute("file", fileVo);
 				request.getRequestDispatcher("/board/viewBoard.jsp").forward(request, response);
-			
 			
 		} catch (SQLException | NamingException e) {
 			e.printStackTrace();

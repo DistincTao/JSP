@@ -34,6 +34,13 @@ public class BoardDaoSql {
 
 	public static final String SELECT_TOTALPOST_SEARCH = "SELECT count(*) AS total_post FROM board WHERE ";
 	public static final String SELECT_SEARCH_BOARD_BY_PAGING = "SELECT * FROM board WHERE ";
+	public static final String UPDATE_LIKECOUNT = "update board set like_count = like_count + 1 where board_no = ?";
+	public static final String INSERT_LIKECOUNT_LOG_ID = "INSERT INTO likecount (board_no, user_id) values(?, ?)";
+	public static final String SELECT_LIKECOUNTLOG = "SELECT count(*) AS likecount FROM likecount WHERE board_no = ? AND user_id = ?";
+	public static final String SELECT_LIKECOUNT = "SELECT count(*) AS like_count FROM likecount WHERE board_no = ?";
+	public static final String SELECT_LIKECOUNTLOG_LIST = "SELECT * FROM likecount WHERE board_no = ? AND user_id = ?";
 
+	public static final String DELETE_LIKECOUNTLOG = "DELETE FROM likecount WHERE board_no = ? AND user_id = ?";
+	public static final String UPDATE_LIKECOUNT_MINUS = "update board set like_count = like_count - 1 where board_no = ?";
 
 }

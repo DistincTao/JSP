@@ -13,31 +13,59 @@ $(function() {
 		} else {
 			$("#changeFile").show()
 		}
+	
+	
 		
 	})
+	
+	$("#likeCnt").click(function() {
+		let boardNo = $("#boardNo").html();
+		if ($("#likeCnt").hasClass("fa-solid") == false)	{
+			 $.ajax({
+				url : 'likeCount.bo',
+				type : 'post',
+				data : {"boardNo" : boardNo},
+				dataType : 'json',
+				async: false,
+				success : function(data) {
+					console.log(data)
+					if (data.status == 'success'){
+						$(".currLike").html(data.likeCount);
+						$("#likeCnt").toggleClass('fa-solid');
+					} else {
+						alert("LOGIN 후 사용 가능합니다!");
+						location.href="../member/login.jsp";
+					}
+				},
+				error : function() {
 
-	$('#likeCnt').click(function () {
-		let boardNo =$("#boardNo").html(); 
-		console.log(boardNo, userId);
-//		 console.log('1');
-		 $.ajax({
-			url : 'likeCount.bo',
-			type : 'post',
-			data : {"boardNo" : boardNo},
-			dataType : 'json',
-			async: false,
-			success : function(data) {
-				console.log(data)
-
-			},
-			error : function() {
-			},
-			complete : function() {
-			}
-		});
-		$(this).toggleClass('fa-solid');
-		
-		
+				},
+				complete : function() {
+				}
+			});
+		} else if ($("#likeCnt").hasClass("fa-solid") == true) {
+			 $.ajax({	
+				url : 'deleteLikeCount.bo',
+				type : 'post',
+				data : {"boardNo" : boardNo},
+				dataType : 'json',
+				async: false,
+				success : function(data) {
+					console.log(data)
+					if (data.status == 'success'){
+						$(".currLike").html(data.likeCount);
+						$("#likeCnt").toggleClass('fa-solid');
+					} 
+					
+				},
+				error : function() {
+					alert("LOGIN 후 사용 가능합니다!");
+					location.href="../member/login.jsp";
+				},
+				complete : function() {
+				}
+			});
+		}
 	});
 	
 

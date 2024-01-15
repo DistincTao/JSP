@@ -7,20 +7,18 @@ public class LikeCountDto {
 	private int boardNo;
 	private String userId;
 	private Date likeDate;
-	private String ipAddr;
 	
 	public LikeCountDto() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public LikeCountDto(int likeNo, int boardNo, String userId, Date likeDate, String ipAddr) {
+	public LikeCountDto(int likeNo, int boardNo, String userId, Date likeDate) {
 		super();
 		this.likeNo = likeNo;
 		this.boardNo = boardNo;
 		this.userId = userId;
 		this.likeDate = likeDate;
-		this.ipAddr = ipAddr;
 	}
 
 	public int getLikeNo() {
@@ -39,10 +37,6 @@ public class LikeCountDto {
 		return likeDate;
 	}
 
-	public String getIpAddr() {
-		return ipAddr;
-	}
-
 	public void setLikeNo(int likeNo) {
 		this.likeNo = likeNo;
 	}
@@ -59,14 +53,10 @@ public class LikeCountDto {
 		this.likeDate = likeDate;
 	}
 
-	public void setIpAddr(String ipAddr) {
-		this.ipAddr = ipAddr;
-	}
-
 	@Override
 	public String toString() {
 		return "LikeCountDto [likeNo=" + likeNo + ", boardNo=" + boardNo + ", userId=" + userId + ", likeDate="
-				+ likeDate + ", ipAddr=" + ipAddr + "]";
+				+ likeDate + "]";
 	}
 	
 }

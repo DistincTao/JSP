@@ -31,6 +31,20 @@
 	<jsp:include page="../header.jsp"></jsp:include>
 	<div class="container">	
 		<h1>게시판 전체 목록</h1>
+		<form action="listAll.bo" class="searchArea">
+			<div style="width : 150px;">
+				<select class="form-select" name="searchType">
+					<option value="writer">Writer</option>
+					<option value="title">Title</option>
+					<option value="content">Content</option>
+				</select>
+			</div>
+			<div class="input-group mb-3" style="width : 350px">
+				<input type="text" class="form-control" id="searchWord" name="searchWord" placeholder="What do you want to search?">
+				<button class="btn btn-primary" type="submit">Search</button>
+				<button class="btn btn-danger" type="reset">Cancel</button>
+			</div>
+		</form>
 		<div class="boardList">
 			<c:choose>
 				<c:when test="${boardList != null }">
@@ -42,6 +56,7 @@
 								<th>작성자</th>
 								<th>작성일</th>
 								<th>조회수</th>
+								<th>좋아요</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -57,6 +72,7 @@
 											<td><fmt:formatDate value="${board.postDate }"
 													pattern="yyyy-MM-dd HH:mm:ss" /></td>
 											<td>${board.readCount }</td>
+											<td>${board.likeCount }</td>
 										</tr>
 									</c:when>
 									<c:when test="${board.isDelete == 'N' && board.step != 0}">
@@ -71,12 +87,14 @@
 											<td><fmt:formatDate value="${board.postDate }"
 													pattern="yyyy-MM-dd HH:mm:ss" /></td>
 											<td>${board.readCount }</td>
+											<td>${board.likeCount }</td>
 										</tr>
 									</c:when>
 									<c:otherwise>
 										<tr id="board${board.boardNo }" class="deletedBoard">
 											<td></td>
 											<td>삭제된 글입니다.</td>
+											<td></td>
 											<td></td>
 											<td></td>
 											<td></td>
@@ -97,21 +115,6 @@
 					onclick="location.href='writeBoard.jsp'">글쓰기</button>
 
 			</div>
-			
-			<form action="listAll.bo" class="searchArea">
-				<div style="width : 150px;">
-					<select class="form-select" name="searchType">
-						<option value="writer">Writer</option>
-						<option value="title">Title</option>
-						<option value="content">Content</option>
-					</select>
-				</div>
-				<div class="input-group mb-3" style="width : 350px">
-					<input type="text" class="form-control" id="searchWord" name="searchWord" placeholder="What do you want to search?">
-					<button class="btn btn-primary" type="submit">Search</button>
-					<button class="btn btn-danger" type="reset">Cancel</button>
-				</div>
-			</form>
 				
 			<ul class="pagination">
 				<c:choose>

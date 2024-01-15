@@ -20,12 +20,12 @@ import com.jspminipjt.service.BoardService;
 import com.jspminipjt.vo.LikeCountVo;
 import com.jspminipjt.vo.member.MemberVo;
 
-public class LikeCountService implements BoardService {
+public class DeleteLikeCountService implements BoardService {
 
 	@Override
 	public BoardFactory doAction(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		System.out.println("좋아요 수 증가 진행 시작");
+		System.out.println("좋아요 수 감소 진행 시작");
 		System.out.println(request.getParameter("boardNo"));
 		BoardDao dao = BoardDaoCRUD.getInstance();
 		HttpSession sess = request.getSession();
@@ -47,11 +47,11 @@ public class LikeCountService implements BoardService {
 				userId = vo.getUserId();
 				dto = new LikeCountDto(-1, boardNo, userId, null);
 				System.out.println(dto.toString());
-				result = dao.addLikeCountTransaction(dto);
+				result = dao.deleteLikeCountTransaction(dto);
 			} 
 			
 			if (result == 1) {
-				System.out.println("좋아요 수 증가 완료 및 다시 불러오기 시작!");
+				System.out.println("좋아요 수 감소 완료 및 다시 불러오기 시작!");
 				json.put("status", "success");
 				
 				likeCount = dao.selectLikeCount(boardNo);
@@ -78,5 +78,5 @@ public class LikeCountService implements BoardService {
 		
 		return null;
 	}
-	
+
 }
