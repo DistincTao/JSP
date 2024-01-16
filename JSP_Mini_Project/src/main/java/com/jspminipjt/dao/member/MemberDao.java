@@ -57,6 +57,8 @@ public interface MemberDao {
 	public abstract int getTotalPostCnt(String userId) throws NamingException, SQLException;
 	// 해당 아이디의 마지막 로그인 기록 가져오기
 	public abstract Date getLastLogin(String userId) throws NamingException, SQLException;
+	// 해당 아이디 휴면 계정으로 전환
+	public abstract int deleteMember(String userId) throws NamingException, SQLException;
 	
 	
 	// 전체 회원 정보 조회 (R)

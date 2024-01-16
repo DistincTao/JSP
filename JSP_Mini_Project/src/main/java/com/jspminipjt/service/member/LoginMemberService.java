@@ -38,28 +38,32 @@ public class LoginMemberService implements MemberService {
 			Date lastLogin = dao.getLastLogin(userId);
 			MemberVo vo = dao.loginMember(userId, userPwd);
 			if (vo != null) { // 로그인 성공
-				Date now = new Date(System.currentTimeMillis() );
-				if ((now.getTime() - lastLogin.getTime()) / 1000 / 60 / 60 / 24 > 1) {
-					System.out.println(vo.toString());
-					System.out.println((now.getTime() - lastLogin.getTime() / 1000 / 60 / 60 / 24));
-					// member 테이블에 포인트를 update하고,pointlog에 기록 남기기
-					result = dao.addPointToMember(vo.getUserId(), "login", MemberDaoSql.LOGIN);
-					System.out.println("login transaction : " + result);			
-				} else {
-					vo = dao.loginMember(userId, userPwd);
-					result = 1;
-				}
+				if (!vo.getIsDelete().equals("Y")) {
+					Date now = new Date(System.currentTimeMillis() );
+					if (dao.getLastLogin(userId) == null || (now.getTime() - dao.getLastLogin(userId).getTime()) / 1000 / 60 / 60 / 24 > 1) {
+						System.out.println(vo.toString());
+//						System.out.println((now.getTime() - lastLogin.getTime() / 1000 / 60 / 60 / 24));
+						// member 테이블에 포인트를 update하고,pointlog에 기록 남기기
+						result = dao.addPointToMember(vo.getUserId(), "login", MemberDaoSql.LOGIN);
+						System.out.println("login transaction : " + result);			
+					} else {
+						vo = dao.loginMember(userId, userPwd);
+						result = 1;
+					}					
+				} 
+				
 				if (result == 1) {
-					sess.setAttribute("login", vo); // session에 로그인 유저 정보 바인딩				
+					sess.setAttribute("login", vo); // session에 로그인 유저 정보 바인딩
+					mf.setRedirect(true);
+					mf.setWhereToGo(request.getContextPath() + "/index.jsp?status=success");
+				} else {
+					mf.setRedirect(true);
+					mf.setWhereToGo(request.getContextPath() + "/member/login.jsp?status=fail");
 				}
-				
-				
-				
-				
 				
 //				request.getRequestDispatcher("../index.jsp").forward(request, response);
-				mf.setRedirect(true);
-				mf.setWhereToGo(request.getContextPath() + "/index.jsp?status=success");
+//				mf.setRedirect(true);
+//				mf.setWhereToGo(request.getContextPath() + "/index.jsp?status=success");
 				
 			} else {
 				mf.setRedirect(true);

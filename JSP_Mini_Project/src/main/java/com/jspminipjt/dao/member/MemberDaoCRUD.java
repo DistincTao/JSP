@@ -261,7 +261,8 @@ public class MemberDaoCRUD implements MemberDao {
 					          rs.getInt("user_img"),
 					          rs.getInt("user_point"),
 					          rs.getString("new_filename"),
-					          rs.getString("is_admin"));
+					          rs.getString("is_admin"),
+					          rs.getString("isDelete"));
 		}
 	
 		DBConnection.getInstance().dbClose(rs, pstmt, con);
@@ -348,7 +349,8 @@ public class MemberDaoCRUD implements MemberDao {
 					          rs.getInt("user_img"),
 					          rs.getInt("user_point"),
 					          rs.getString("new_filename"),
-					          rs.getString("is_admin"));
+					          rs.getString("is_admin"),
+					          rs.getString("isDelete"));
 		}
 		
 		DBConnection.getInstance().dbClose(rs, pstmt, con);
@@ -501,6 +503,34 @@ public class MemberDaoCRUD implements MemberDao {
 
 		DBConnection.getInstance().dbClose(rs, pstmt, con);
 		return loginDate;
+	}
+
+	@Override
+	public int deleteMember(String userId) throws NamingException, SQLException {
+		System.out.println("DB에서 회원 삭제 진행");
+		int result = -1;
+		Connection con = DBConnection.getInstance().dbConnect();
+		con.setAutoCommit(false);
+		PreparedStatement pstmt = null;
+		System.out.println(userId);
+		
+		String query = MemberDaoSql.UPDATE_USER_DELETE;
+
+		pstmt = con.prepareStatement(query);
+		pstmt.setString(1, userId );
+		result = pstmt.executeUpdate();
+		
+		if (result == 1) {
+			con.commit();
+			result = 1;
+		} else {
+			con.rollback();
+		}
+		
+		System.out.println(result);
+		con.setAutoCommit(true);
+		DBConnection.getInstance().dbClose(pstmt, con);
+		return result;
 	}
 	
 }

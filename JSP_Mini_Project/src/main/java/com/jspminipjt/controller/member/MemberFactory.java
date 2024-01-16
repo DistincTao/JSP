@@ -2,6 +2,7 @@ package com.jspminipjt.controller.member;
 
 import com.jspminipjt.service.MemberService;
 import com.jspminipjt.service.member.ConfirmEmailCodeService;
+import com.jspminipjt.service.member.DeleteMemberService;
 import com.jspminipjt.service.member.DuplicateUserIdService;
 import com.jspminipjt.service.member.LoginMemberService;
 import com.jspminipjt.service.member.LogoutMemberService;
@@ -65,7 +66,9 @@ public class MemberFactory {
 			result = new MyPageService();
 		} else if (command.equals("/member/updateData.mem")){
 			result = new UpdateMyInfoService();
-		} 
+		}  else if (command.equals("/member/deleteMember.mem")){
+			result = new DeleteMemberService();
+		}
 		
 		return result;
 	}

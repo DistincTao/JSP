@@ -243,7 +243,12 @@
 				</div>
 			</div>
 		</div>
-<!-- 		<!--  포인트 모달 --> -->
+		<form action="deleteMember.mem" method="post">
+			<input type="hidden" name="deleteMember" value="${requestScope.memberInfo.userId }">
+			<button type="submit" class="btn btn-danger">Delete Account</button>
+		</form>
+		
+<!-- 		<!--  포인트 모달 -->
 <!-- 		<div class="modal pointList"> -->
 <!-- 			<div class="modal-dialog"> -->
 <!-- 				<div class="modal-content"> -->

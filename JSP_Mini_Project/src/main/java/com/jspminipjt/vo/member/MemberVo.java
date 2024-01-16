@@ -11,6 +11,7 @@ public class MemberVo {
 	private int userPoint;
 	private String memberImg;
 	private String isAdmin;
+	private String isDelete;
 	
 	
 	public MemberVo() {
@@ -40,7 +41,7 @@ public class MemberVo {
 	
 	
 	public MemberVo(String userId, String userPwd, String userEmail, Date regdate, int userImg, int userPoint,
-			String memberImg, String isAdmin) {
+			String memberImg, String isAdmin, String isDelete) {
 		super();
 		this.userId = userId;
 		this.userPwd = userPwd;
@@ -50,6 +51,7 @@ public class MemberVo {
 		this.userPoint = userPoint;
 		this.memberImg = memberImg;
 		this.isAdmin = isAdmin;
+		this.isDelete = isDelete;
 	}
 	
 
@@ -85,6 +87,9 @@ public class MemberVo {
 		return isAdmin;
 	}
 
+	public String getIsDelete() {
+		return isDelete;
+	}
 
 	@Override
 	public String toString() {
