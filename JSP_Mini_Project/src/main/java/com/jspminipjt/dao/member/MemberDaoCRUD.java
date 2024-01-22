@@ -262,7 +262,7 @@ public class MemberDaoCRUD implements MemberDao {
 					          rs.getInt("user_point"),
 					          rs.getString("new_filename"),
 					          rs.getString("is_admin"),
-					          rs.getString("isDelete"));
+					          rs.getString("is_delete"));
 		}
 	
 		DBConnection.getInstance().dbClose(rs, pstmt, con);
@@ -350,7 +350,7 @@ public class MemberDaoCRUD implements MemberDao {
 					          rs.getInt("user_point"),
 					          rs.getString("new_filename"),
 					          rs.getString("is_admin"),
-					          rs.getString("isDelete"));
+					          rs.getString("is_delete"));
 		}
 		
 		DBConnection.getInstance().dbClose(rs, pstmt, con);

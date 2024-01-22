@@ -44,6 +44,7 @@ public class LoginMemberService implements MemberService {
 						System.out.println(vo.toString());
 //						System.out.println((now.getTime() - lastLogin.getTime() / 1000 / 60 / 60 / 24));
 						// member 테이블에 포인트를 update하고,pointlog에 기록 남기기
+						vo = dao.loginMember(userId, userPwd);
 						result = dao.addPointToMember(vo.getUserId(), "login", MemberDaoSql.LOGIN);
 						System.out.println("login transaction : " + result);			
 					} else {

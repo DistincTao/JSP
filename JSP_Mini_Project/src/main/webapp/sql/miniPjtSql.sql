@@ -207,5 +207,11 @@ SELECT * FROM board ORDER BY ref desc, ref_order limit  ? , 5;
 
 ----------------- 검색어 + 유형 처리 -----------------------
 
+Alter table member
+add isDelete varchar(1);
 
+UPDATE member SET isDelete = 'Y' WHERE user_id = 'wanda';
 
+-- 보드테이블에 썸네일 컬럼 추가 -- 
+ALTER TABLE `distinctao`.`uploadedfile` 
+ADD COLUMN `thumbFileName` VARCHAR(80) NULL AFTER `base64String`;

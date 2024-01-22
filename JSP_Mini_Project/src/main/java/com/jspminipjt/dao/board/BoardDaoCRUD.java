@@ -72,7 +72,7 @@ public class BoardDaoCRUD implements BoardDao {
 			vo = new BoardVo(rs.getInt("board_no"), rs.getString("writer"), rs.getString("title"),
 					rs.getTimestamp("post_date"), rs.getString("content"), rs.getInt("read_count"),
 					rs.getInt("like_count"), rs.getInt("ref"), rs.getInt("step"), rs.getInt("ref_order"),
-					rs.getString("isDelete"));
+					rs.getString("is_delete"));
 
 			list.add(vo);
 		}
@@ -114,7 +114,7 @@ public class BoardDaoCRUD implements BoardDao {
 			vo = new BoardVo(rs.getInt("board_no"), rs.getString("writer"), rs.getString("title"),
 					rs.getTimestamp("post_date"), rs.getString("content"), rs.getInt("read_count"),
 					rs.getInt("like_count"), rs.getInt("ref"), rs.getInt("step"), rs.getInt("ref_order"),
-					rs.getString("isDelete"));
+					rs.getString("is_delete"));
 
 			list.add(vo);
 		}
@@ -143,7 +143,7 @@ public class BoardDaoCRUD implements BoardDao {
 			vo = new BoardVo(rs.getInt("board_no"), rs.getString("writer"), rs.getString("title"),
 					rs.getTimestamp("post_date"), rs.getString("content"), rs.getInt("read_count"),
 					rs.getInt("like_count"), rs.getInt("ref"), rs.getInt("step"), rs.getInt("ref_order"),
-					rs.getString("isDelete"));
+					rs.getString("is_delete"));
 			
 			list.add(vo);
 		}
@@ -481,7 +481,7 @@ public class BoardDaoCRUD implements BoardDao {
 							 rs.getInt("ref"),
 							 rs.getInt("step"),
 							 rs.getInt("ref_order"),
-							 rs.getString("isDelete"));
+							 rs.getString("is_delete"));
 		}
 		
 		return vo;

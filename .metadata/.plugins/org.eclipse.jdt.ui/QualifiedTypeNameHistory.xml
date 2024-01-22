@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="javax.mail.internet.InternetAddress"/>
-    <fullyQualifiedTypeName name="javax.mail.internet.MimeMessage.RecipientType"/>
-    <fullyQualifiedTypeName name="javax.mail.Transport"/>
     <fullyQualifiedTypeName name="org.json.simple.JSONObject"/>
     <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="com.jspminipjt.etc.UploadedFile"/>
@@ -35,14 +32,12 @@
     <fullyQualifiedTypeName name="org.omg.CORBA.BAD_INV_ORDER"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.io.File"/>
-    <fullyQualifiedTypeName name="com.jspminipjt.dao.member.MemberDaoCRUD"/>
     <fullyQualifiedTypeName name="com.jspminipjt.vo.board.BoardVo"/>
     <fullyQualifiedTypeName name="javax.naming.NamingException"/>
     <fullyQualifiedTypeName name="java.sql.SQLException"/>
     <fullyQualifiedTypeName name="com.mysql.cj.conf.PropertyDefinitions.ZeroDatetimeBehavior"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="com.jspminipjt.vo.UploadFileVo"/>
-    <fullyQualifiedTypeName name="java.lang.Character"/>
     <fullyQualifiedTypeName name="com.jspminipjt.controller.board.BoardFactory"/>
     <fullyQualifiedTypeName name="com.jspminipjt.dao.board.BoardDao"/>
     <fullyQualifiedTypeName name="com.jspminipjt.dto.board.BoardDto"/>
@@ -50,7 +45,6 @@
     <fullyQualifiedTypeName name="org.apache.commons.fileupload.FileItem"/>
     <fullyQualifiedTypeName name="com.jspminipjt.dao.board.BoardDaoCRUD"/>
     <fullyQualifiedTypeName name="com.jspminipjt.vo.PagingInfoVo"/>
-    <fullyQualifiedTypeName name="com.jspminipjt.controller.member.MemberFactory"/>
     <fullyQualifiedTypeName name="com.jspminipjt.dto.board.SearchCriteriaDto"/>
     <fullyQualifiedTypeName name="com.jspminipjt.dto.board.LikeCountDto"/>
     <fullyQualifiedTypeName name="java.util.concurrent.ConcurrentHashMap"/>
@@ -60,4 +54,10 @@
     <fullyQualifiedTypeName name="com.jspminipjt.dao.DBConnection"/>
     <fullyQualifiedTypeName name="com.jspminipjt.vo.LikeCountVo"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="com.jspminipjt.service.member.DeleteMemberService"/>
+    <fullyQualifiedTypeName name="com.jspminipjt.controller.member.MemberFactory"/>
+    <fullyQualifiedTypeName name="com.jspminipjt.dao.member.MemberDao"/>
+    <fullyQualifiedTypeName name="com.jspminipjt.dao.member.MemberDaoCRUD"/>
+    <fullyQualifiedTypeName name="java.lang.Character"/>
+    <fullyQualifiedTypeName name="java.util.UUID"/>
 </qualifiedTypeNameHistroy>

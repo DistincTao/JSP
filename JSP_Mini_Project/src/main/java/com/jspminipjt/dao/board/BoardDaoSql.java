@@ -22,7 +22,7 @@ public class BoardDaoSql {
 	public static final String UPDATE_READTIME = "update readcountprocess set read_time = now() WHERE ip_addr = ? AND board_no =?";
 	public static final String UPDATE_READCOUNT = "update board set read_count = read_count + 1 where board_no = ?";
 	public static final String SELECT_BY_BOARD_NO = "SELECT * FROM board WHERE board_no = ?";
-	public static final String DELET_BOARD = "UPDATE board SET isDelete = 'Y' WHERE board_no = ?";
+	public static final String DELET_BOARD = "UPDATE board SET is_delete = 'Y' WHERE board_no = ?";
 	public static final String UPDATE_BOARD = "UPDATE board SET title = ?, content = ? WHERE board_no = ?";
 	public static final String UPDATE_UPLOADEDFILE = "UPDATE uploadedfile SET original_filename = ?, ext = ?, new_filename = ?, file_size = ?, base64String = ? WHERE board_no = ?";
 	
