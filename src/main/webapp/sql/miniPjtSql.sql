@@ -215,3 +215,24 @@ UPDATE member SET isDelete = 'Y' WHERE user_id = 'wanda';
 -- 보드테이블에 썸네일 컬럼 추가 -- 
 ALTER TABLE `distinctao`.`uploadedfile` 
 ADD COLUMN `thumbFileName` VARCHAR(80) NULL AFTER `base64String`;
+
+CREATE TABLE `distinctao`.`reply` (
+  `reply_no` INT NOT NULL AUTO_INCREMENT,
+  `board_no` INT(11) NULL,
+  `reply_text` VARCHAR(500) NULL,
+  `replier` VARCHAR(8) NULL,
+  `post_date` DATETIME NULL DEFAULT now(),
+  PRIMARY KEY (`reply_no`),
+  INDEX `reply_board_no_FK_idx` (`board_no` ASC) VISIBLE,
+  INDEX `reply_replier_FK_idx` (`replier` ASC) VISIBLE,
+  CONSTRAINT `reply_board_no_FK`
+    FOREIGN KEY (`board_no`)
+    REFERENCES `distinctao`.`board` (`board_no`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `reply_replier_FK`
+    FOREIGN KEY (`replier`)
+    REFERENCES `distinctao`.`member` (`user_id`)
+    ON DELETE SET NULL
+    ON UPDATE NO ACTION);
+
